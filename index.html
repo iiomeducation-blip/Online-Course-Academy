@@ -2,1038 +2,1026 @@
 <html lang="bn" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ভর্তি চলছে ২০২৬ | মারকাজুল নূর ইসলামিক একাডেমী</title>
-    <meta name="description" content="মারকাজুল নূর ইসলামিক একাডেমীতে ২০২৬ শিক্ষাবর্ষে নূরানী, হিফজ এবং জেনারেল বিভাগে ভর্তি চলছে। আপনার সন্তানের জন্য কুরআন ও সুন্নাহভিত্তিক আদর্শ শিক্ষা নিশ্চিত করুন।">
-    <meta name="keywords" content="Madrasa Admission, Hifz, Noorani, Islamic Academy, Markazul Noor, মাদ্রাসা ভর্তি, হিফজ মাদ্রাসা">
+    <!-- স্ট্যান্ডার্ড রেসপনসিভ ভিউপোর্ট (সব ধরনের মোবাইল ব্রাউজারে নিখুঁত প্রদর্শনের জন্য) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>IIOM - প্রিমিয়াম AI কার্টুন ভিডিও মেকিং কোর্স</title>
     
-    <!-- গুগল ফন্টস: হেডিংসের জন্য তিরো বাংলা এবং বডির জন্য হিন্দ শিলিগুড়ি -->
+    <!-- Google Fonts for premium Bengali typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Noto+Sans+Bengali:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- ফন্ট অসাম আইকন -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- টেইলউইন্ড সিএসএস -->
+    <!-- Tailwind CSS CDN with Custom Brand Colors Config -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- কাস্টম কালার ও ফন্টের জন্য টেইলউইন্ড কনফিগারেশন -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: {
-                        islamic: {
-                            light: '#e8f5e9',
-                            DEFAULT: '#047857', // এমারেল্ড ৭০০
-                            dark: '#064e3b',   // এমারেল্ড ৯০০
-                            accent: '#d97706', // অ্যাম্বার ৬০০
-                        }
-                    },
                     fontFamily: {
-                        sans: ['"Hind Siliguri"', 'sans-serif'],
-                        serif: ['"Tiro Bangla"', 'serif'],
+                        sans: ['Hind Siliguri', 'Noto Sans Bengali', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#edf4fc',
+                            100: '#dbebfa',
+                            200: '#bdd7f5',
+                            300: '#90bfef',
+                            400: '#5c9fe6',
+                            500: '#347cdb',
+                            600: '#0050b3', /* Royal Blue Theme */
+                            700: '#004294',
+                            800: '#003373',
+                            900: '#002554',
+                            950: '#00142e'
+                        }
                     }
                 }
             }
         }
     </script>
 
+    <!-- Lucide Icons for vector icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
     <style>
-        /* কাস্টম স্টাইল ও অ্যানিমেশন */
-        body { font-family: 'Hind Siliguri', sans-serif; }
-        h1, h2, h3, h4, h5, h6, .font-bengali-serif { font-family: 'Tiro Bangla', serif; }
+        /* Smooth transitions and custom animations */
+        .fade-in {
+            animation: fadeIn 0.4s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
         
-        .islamic-pattern {
-            background-color: #f8fafc;
-            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23047857' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        /* Floating animations for decorative blobs */
+        .blob-float {
+            animation: float 6s ease-in-out infinite alternate;
+        }
+        @keyframes float {
+            from { transform: translateY(0px) scale(1); }
+            to { transform: translateY(-15px) scale(1.05); }
         }
 
-        .hero-overlay {
-            background: linear-gradient(to right, rgba(4, 120, 87, 0.85), rgba(6, 78, 59, 0.75));
+        /* Form inputs target size helper for mobile */
+        input, select, textarea {
+            font-size: 16px !important; /* Prevents iOS Safari auto-zoom */
         }
 
-        .hover-card {
-            transition: all 0.3s ease;
-        }
-        .hover-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-            border-color: #047857;
+        /* ==================================================
+           CRITICAL BLOGGER MOBILE LAYOUT OVERRIDES (অপ্রতিরোধ্য মোবাইল ভিউ ফিক্স)
+           ================================================== */
+        html, body {
+            width: 100% !important;
+            max-width: 100% !important;
+            min-width: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            overflow-x: hidden !important;
+            overflow-y: auto !important;
+            display: block !important;
+            height: auto !important;
         }
 
-        /* ফ্লোটিং বাটনসমূহ */
-        .floating-btn {
-            position: fixed;
-            z-index: 100;
-            border-radius: 50%;
-            width: 55px;
-            height: 55px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            transition: transform 0.3s ease;
+        /* ব্লগারের সকল সম্ভাব্য লেআউট কন্টেইনার এবং কলাম ফিক্স করা */
+        .column-center-outer, .column-center-inner, .main-inner, .content-inner, .content-outer,
+        #main, #main-wrapper, .post-outer, .post, .post-body, .entry-content, .post-body-container,
+        #outer-wrapper, #content-wrapper, .body-outer, .region-inner {
+            width: 100% !important;
+            max-width: 100% !important;
+            min-width: 100% !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            float: none !important;
+            display: block !important;
+            background: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
+            overflow: visible !important;
         }
-        .floating-btn:hover { transform: scale(1.1); }
-        .whatsapp-btn { bottom: 20px; right: 20px; background-color: #25D366; color: white; }
-        .call-btn { bottom: 90px; right: 20px; background-color: #047857; color: white; }
 
-        /* ফরম সাকসেস মোডাল */
-        #successModal { display: none; }
-        #successModal.active { display: flex; }
+        /* স্ক্রোলবার কাস্টমাইজেশন */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
     </style>
-
-    <!-- এসইও স্কিমা মার্কআপ -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "EducationalOrganization",
-      "name": "মারকাজুল নূর ইসলামিক একাডেমী",
-      "description": "একটি আদর্শ দ্বীনি শিক্ষা প্রতিষ্ঠান। নূরানী, হিফজ এবং জেনারেল বিভাগে ভর্তি চলছে।",
-      "url": "https://www.markazulnoor.example.com",
-      "telephone": "+8801700000000",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "মেইন রোড, মাদ্রাসা পাড়া",
-        "addressLocality": "ঢাকা",
-        "addressRegion": "ঢাকা",
-        "postalCode": "1200",
-        "addressCountry": "BD"
-      }
-    }
-    </script>
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased pt-20">
+<body class="bg-slate-50 text-slate-800 font-sans min-h-screen flex flex-col antialiased">
 
-    <!-- ফ্লোটিং অ্যাকশন বাটনসমূহ -->
-    <a href="tel:+8801700000000" class="floating-btn call-btn text-2xl" aria-label="Call Now">
-        <i class="fas fa-phone-alt"></i>
-    </a>
-    <a href="https://wa.me/8801700000000" target="_blank" class="floating-btn whatsapp-btn text-3xl" aria-label="WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <!-- Custom Premium Toast Notification (Alert replacement) -->
+    <div id="toast-container" class="fixed top-24 right-4 z-50 flex flex-col gap-3 max-w-sm w-full px-4 pointer-events-none"></div>
 
-    <!-- হেডার / নেভিগেশন বার -->
-    <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50 transition-all duration-300" id="navbar">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <!-- লোগো (আপনার দেওয়া ইমেজ লিংকটি ব্যবহার করা হয়েছে) -->
-                <div class="flex-shrink-0 flex items-center gap-3">
-                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgckyH3KvDmuqcCkJmyznt3DI8ENiWl-Wo3jE9Wb-pUhk2-WYW0EVwZQ_CkgkI9a06E5d4EBWfMdM4pC3kKVuRfMcdO_82SzEE6_L5ojBj1cyRJwQpwhlmTc6cj0EdQehD5vwPSNJ5c_VE5IPB8Rz66-mzrcKl_Pl7TO87mAQiGKVrUH2YeMmf2Q9MsLt8O" alt="[মারকাজুল নূর লোগো]" class="w-12 h-12 rounded-full object-cover border-2 border-islamic shadow-md">
-                    <span class="font-bengali-serif font-bold text-xl md:text-2xl text-islamic-dark leading-tight">মারকাজুল নূর <br><span class="text-sm md:text-base font-sans font-normal text-gray-500">ইসলামিক একাডেমী</span></span>
-                </div>
-
-                <!-- ডেস্কটপ মেনু -->
-                <nav class="hidden md:flex space-x-8">
-                    <a href="#home" class="text-gray-600 hover:text-islamic font-medium transition">হোম</a>
-                    <a href="#why-us" class="text-gray-600 hover:text-islamic font-medium transition">বৈশিষ্ট্য</a>
-                    <a href="#departments" class="text-gray-600 hover:text-islamic font-medium transition">বিভাগসমূহ</a>
-                    <a href="#gallery" class="text-gray-600 hover:text-islamic font-medium transition">গ্যালারি</a>
-                    <a href="#contact" class="text-gray-600 hover:text-islamic font-medium transition">যোগাযোগ</a>
-                </nav>
-
-                <!-- ভর্তি বাটন -->
-                <div class="hidden md:block">
-                    <a href="#admission-form" class="bg-islamic hover:bg-islamic-dark text-white px-6 py-2.5 rounded-full font-medium transition shadow-md hover:shadow-lg flex items-center gap-2">
-                        <i class="fas fa-pen-to-square"></i> অনলাইনে ভর্তি
-                    </a>
-                </div>
-
-                <!-- মোবাইল মেনু বাটন -->
-                <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-islamic focus:outline-none text-2xl">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
+    <!-- Navigation Bar -->
+    <nav class="fixed w-full z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-brand-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20 items-center">
+          
+          <!-- Logo & Brand Name -->
+          <div class="flex items-center space-x-3 cursor-pointer group" onclick="showPage('home')">
+            <img 
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBcDTnbqscKmgueQ6wWXLxgE_GWXA3iTUHj5uv-rKIO2TsdFLpZ-c0hyphenhyphenTY7PQFe8YxNkAGOkF-ljJampHEs44xXvlELR5Q1ZKixEIng0U1w1AOa0QrAspUK1SUI4LUmW5oE0d3LnsOl9rU5djFRG3rIL4qZNZJ1xu2w9H9DDo58e2IyHR9EqXFDqJXQA8p/s320/d5664f8e-64ac-4540-a4e5-1b11e2bc533a.jfif" 
+              alt="IIOM Logo" 
+              class="h-12 w-12 rounded-full object-cover border-2 border-brand-600 shadow-sm transition-transform group-hover:scale-105"
+              onerror="this.src='https://placehold.co/100x100/0050b3/ffffff?text=IIOM'"
+            />
+            <div>
+              <h1 class="text-xl sm:text-2xl font-bold text-brand-900 leading-none">IIOM</h1>
+              <p class="text-[0.6rem] sm:text-[0.65rem] uppercase tracking-widest text-brand-600 font-semibold mt-0.5">AI কার্টুন একাডেমি</p>
             </div>
-        </div>
+          </div>
 
-        <!-- মোবাইল মেনু ড্রয়ার -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
-            <div class="px-4 pt-2 pb-6 space-y-2">
-                <a href="#home" class="block px-3 py-2 text-gray-700 font-medium hover:bg-islamic-light hover:text-islamic rounded-md">হোম</a>
-                <a href="#why-us" class="block px-3 py-2 text-gray-700 font-medium hover:bg-islamic-light hover:text-islamic rounded-md">বৈশিষ্ট্য</a>
-                <a href="#departments" class="block px-3 py-2 text-gray-700 font-medium hover:bg-islamic-light hover:text-islamic rounded-md">বিভাগসমূহ</a>
-                <a href="#gallery" class="block px-3 py-2 text-gray-700 font-medium hover:bg-islamic-light hover:text-islamic rounded-md">গ্যালারি</a>
-                <a href="#contact" class="block px-3 py-2 text-gray-700 font-medium hover:bg-islamic-light hover:text-islamic rounded-md">যোগাযোগ</a>
-                <a href="#admission-form" class="block mt-4 text-center bg-islamic text-white px-3 py-3 rounded-md font-medium">অনলাইনে ভর্তি আবেদন</a>
-            </div>
-        </div>
-    </header>
+          <!-- Desktop Menu links -->
+          <div class="hidden md:flex items-center space-x-8">
+            <button onclick="showPage('home')" class="text-base font-medium text-slate-600 hover:text-brand-700 transition-colors">হোম</button>
+            <button onclick="scrollToSection('curriculum')" class="text-base font-medium text-slate-600 hover:text-brand-700 transition-colors">কোর্সের মডিউল সমূহ</button>
+            <button onclick="showStatusChecker()" class="text-base font-medium text-slate-600 hover:text-brand-700 transition-colors">ভর্তি স্ট্যাটাস</button>
+            <button onclick="showPage('register')" class="bg-amber-500 hover:bg-amber-600 text-white px-6 py-2.5 rounded-full font-semibold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">নিবন্ধন করুন</button>
+          </div>
 
-    <!-- হিরো সেকশন (আপনার দেওয়া ইমেজটি ব্যাকগ্রাউন্ড হিসেবে ব্যবহার করা হয়েছে) -->
-    <section id="home" class="relative bg-cover bg-center min-h-[90vh] flex items-center" style="background-image: url('https://blogger.googleusercontent.com/img/a/AVvXsEgckyH3KvDmuqcCkJmyznt3DI8ENiWl-Wo3jE9Wb-pUhk2-WYW0EVwZQ_CkgkI9a06E5d4EBWfMdM4pC3kKVuRfMcdO_82SzEE6_L5ojBj1cyRJwQpwhlmTc6cj0EdQehD5vwPSNJ5c_VE5IPB8Rz66-mzrcKl_Pl7TO87mAQiGKVrUH2YeMmf2Q9MsLt8O');">
-        <div class="absolute inset-0 hero-overlay"></div>
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center md:text-left text-white">
-            
-            <div class="inline-block bg-white/20 backdrop-blur-sm border border-white/30 text-white px-4 py-1.5 rounded-full text-sm font-medium mb-6 animate-pulse">
-                <i class="fas fa-circle text-green-400 text-xs mr-2"></i> ভর্তি কার্যক্রম চলমান
-            </div>
-
-            <h1 class="font-bengali-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
-                নূরানী, হিফজ এবং জেনারেল <br class="hidden md:block"> বিভাগে ভর্তি চলছে – ২০২৬ শিক্ষাবর্ষ
-            </h1>
-            
-            <h2 class="text-xl md:text-2xl font-medium text-islamic-light mb-6 font-bengali-serif">
-                আপনার সন্তানের জন্য কুরআন ও সুন্নাহভিত্তিক আদেশ শিক্ষা নিশ্চিত করুন
-            </h2>
-            
-            <p class="text-lg md:text-xl max-w-3xl mb-10 text-gray-100 font-light leading-relaxed mx-auto md:mx-0">
-                অভিজ্ঞ উস্তাযদের তত্ত্বাবধানে সহীহ তাজওয়ীদ, মজবুত হিফজ, কিতাব অধ্যয়ন এবং উন্নত নৈতিক শিক্ষার সমন্বয়ে গড়ে তোলা হচ্ছে আগামী দিনের যোগ্য হাফেজ ও আলেম।
-            </p>
-            
-            <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                <a href="#admission-form" class="bg-islamic-accent hover:bg-yellow-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition shadow-lg flex items-center justify-center gap-3">
-                    <i class="fas fa-file-signature"></i> ভর্তি আবেদন করুন
-                </a>
-                <a href="#contact" class="bg-white/10 hover:bg-white/20 backdrop-blur-md border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg transition flex items-center justify-center gap-3">
-                    <i class="fas fa-phone"></i> এখনই যোগাযোগ করুন
-                </a>
-            </div>
-        </div>
-        
-        <!-- নীচের কার্ভ ডিজাইন -->
-        <div class="absolute bottom-0 w-full overflow-hidden leading-none">
-            <svg class="relative block w-full h-12 md:h-24" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,119.2,200.86,108.9z" fill="#f9fafb"></path>
-            </svg>
-        </div>
-    </section>
-
-    <!-- কেন আমাদের নির্বাচন করবেন সেকশন -->
-    <section id="why-us" class="py-20 bg-gray-50 islamic-pattern">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="font-bengali-serif text-3xl md:text-4xl font-bold text-islamic-dark mb-4">কেন আমাদের নির্বাচন করবেন?</h2>
-                <div class="w-24 h-1 bg-islamic-accent mx-auto rounded mb-4"></div>
-                <p class="text-gray-600 text-lg">আপনার সন্তানের উজ্জ্বল ভবিষ্যৎ ও সঠিক ইসলামী মূল্যবোধ গঠনে আমরা প্রতিশ্রুতিবদ্ধ।</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- কার্ড ১ -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover-card relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-islamic-light rounded-full z-0 transition-transform group-hover:scale-150"></div>
-                    <div class="relative z-10">
-                        <div class="w-14 h-14 bg-islamic/10 text-islamic rounded-xl flex items-center justify-center text-2xl mb-6">
-                            <i class="fas fa-user-graduate"></i>
-                        </div>
-                        <h3 class="font-bengali-serif text-xl font-bold text-gray-800 mb-3">অভিজ্ঞ শিক্ষকমণ্ডলী</h3>
-                        <p class="text-gray-600">দেশ-বিদেশের স্বনামधন্য প্রতিষ্ঠান থেকে ডিগ্রিপ্রাপ্ত অভিজ্ঞ ও দক্ষ হাফেজ এবং আলেমদের দ্বারা পাঠদান।</p>
-                    </div>
-                </div>
-
-                <!-- কার্ড ২ -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover-card relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-islamic-light rounded-full z-0 transition-transform group-hover:scale-150"></div>
-                    <div class="relative z-10">
-                        <div class="w-14 h-14 bg-islamic/10 text-islamic rounded-xl flex items-center justify-center text-2xl mb-6">
-                            <i class="fas fa-book-open"></i>
-                        </div>
-                        <h3 class="font-bengali-serif text-xl font-bold text-gray-800 mb-3">কুরআন ও সুন্নাহভিত্তিক শিক্ষা</h3>
-                        <p class="text-gray-600">আধুনিক শিক্ষার পাশাপাশি কুরআন ও সুন্নাহের আলোকে একটি পূর্ণাঙ্গ আদেশ শিক্ষা ব্যবস্থা।</p>
-                    </div>
-                </div>
-
-                <!-- কার্ড ৩ -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover-card relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-islamic-light rounded-full z-0 transition-transform group-hover:scale-150"></div>
-                    <div class="relative z-10">
-                        <div class="w-14 h-14 bg-islamic/10 text-islamic rounded-xl flex items-center justify-center text-2xl mb-6">
-                            <i class="fas fa-calendar-check"></i>
-                        </div>
-                        <h3 class="font-bengali-serif text-xl font-bold text-gray-800 mb-3">নিয়মিত সবক ও মুরাজাআত</h3>
-                        <p class="text-gray-600">হিফজ শিক্ষার্থীদের জন্য দৈনিক সবক, তাকরার ও মুরাজাআতের কঠোর ও নিয়মতান্ত্রিক ব্যবস্থা।</p>
-                    </div>
-                </div>
-
-                <!-- কার্ড ৪ -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover-card relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-islamic-light rounded-full z-0 transition-transform group-hover:scale-150"></div>
-                    <div class="relative z-10">
-                        <div class="w-14 h-14 bg-islamic/10 text-islamic rounded-xl flex items-center justify-center text-2xl mb-6">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <h3 class="font-bengali-serif text-xl font-bold text-gray-800 mb-3">ব্যক্তিগত অগ্রগতি পর্যবেক্ষণ</h3>
-                        <p class="text-gray-600">প্রতিটি শিক্ষার্থীর মেধা ও মনন অনুযায়ী বিশেষ যত্ন এবং দুর্বল শিক্ষার্থীদের জন্য আলাদা ক্লাস।</p>
-                    </div>
-                </div>
-
-                <!-- কার্ড ৫ -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover-card relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-islamic-light rounded-full z-0 transition-transform group-hover:scale-150"></div>
-                    <div class="relative z-10">
-                        <div class="w-14 h-14 bg-islamic/10 text-islamic rounded-xl flex items-center justify-center text-2xl mb-6">
-                            <i class="fas fa-mosque"></i>
-                        </div>
-                        <h3 class="font-bengali-serif text-xl font-bold text-gray-800 mb-3">সুন্দর ও ইসলামিক পরিবেশ</h3>
-                        <p class="text-gray-600">সুপরিসর ক্লাসরুম, পরিষ্কার-পরিচ্ছন্ন আবাসিক ব্যবস্থা এবং সম্পূর্ণ সুন্নাহ সমর্থিত শান্তিময় পরিবেশ।</p>
-                    </div>
-                </div>
-
-                <!-- কার্ড ৬ -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover-card relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-islamic-light rounded-full z-0 transition-transform group-hover:scale-150"></div>
-                    <div class="relative z-10">
-                        <div class="w-14 h-14 bg-islamic/10 text-islamic rounded-xl flex items-center justify-center text-2xl mb-6">
-                            <i class="fas fa-comments"></i>
-                        </div>
-                        <h3 class="font-bengali-serif text-xl font-bold text-gray-800 mb-3">অভিভাবকদের সঙ্গে যোগাযোগ</h3>
-                        <p class="text-gray-600">শিক্ষার্থীর সাপ্তাহিক ও মাসিক রিপোর্ট প্রদান এবং অভিভাবকদের সাথে নিয়মিত মতবিনিময় সভার আয়োজন।</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- বিভাগসমূহ সেকশন -->
-    <section id="departments" class="py-20 bg-white">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="font-bengali-serif text-3xl md:text-4xl font-bold text-islamic-dark mb-4">আমাদের বিভাগসমূহ</h2>
-                <div class="w-24 h-1 bg-islamic-accent mx-auto rounded mb-4"></div>
-                <p class="text-gray-600 text-lg">যুগোপযোগী ও আন্তর্জাতিক মানের সিলেবাসের সমন্বয়ে আমাদের শিক্ষা কার্যক্রম পরিচালিত হয়।</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 max-w-6xl mx-auto">
-                
-                <!-- হিফজ বিভাগ কার্ড -->
-                <div class="bg-islamic-dark text-white rounded-3xl overflow-hidden shadow-2xl relative">
-                    <div class="absolute top-0 right-0 opacity-10">
-                        <svg width="200" height="200" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 3L2 12H5V21H19V12H22L12 3Z" fill="currentColor"/>
-                        </svg>
-                    </div>
-                    <div class="p-10 relative z-10">
-                        <div class="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center text-3xl mb-6 backdrop-blur-sm">
-                            📖
-                        </div>
-                        <h3 class="font-bengali-serif text-3xl font-bold mb-4">হিফজুল কুরআন বিভাগ</h3>
-                        <p class="text-gray-200 mb-8 leading-relaxed">আন্তর্জাতিক মানের হাফেজে কুরআন তৈরির লক্ষ্যে আমাদের রয়েছে বিশেষায়িত হিফজ বিভাগ। যেখানে তাজওয়ীদের সাথে দ্রুত হিফজ সম্পন্ন করা হয়।</p>
-                        
-                        <ul class="space-y-4 mb-8">
-                            <li class="flex items-start gap-3">
-                                <i class="fas fa-check-circle text-islamic-accent mt-1"></i>
-                                <span>সহীহ তাজওয়ীদের মাধ্যমে কুরআনুল কারিম হিফজ</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <i class="fas fa-check-circle text-islamic-accent mt-1"></i>
-                                <span>দৈনিক সবক, আমুখতা ও মুরাজাআতের কঠোর পাবন্দি</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <i class="fas fa-check-circle text-islamic-accent mt-1"></i>
-                                <span>হুসনে সাউত (সুন্দর কণ্ঠস্বর) ও তিলাওয়াতের বিশেষ প্রশিক্ষণ</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <i class="fas fa-check-circle text-islamic-accent mt-1"></i>
-                                <span>অভিজ্ঞ হাফেজ উস্তাযদের সরাসরি সার্বক্ষণিক তত্ত্বাবধান</span>
-                            </li>
-                        </ul>
-                        
-                        <a href="#admission-form" class="inline-block bg-white text-islamic-dark font-bold px-8 py-3 rounded-lg hover:bg-gray-100 transition shadow-md">
-                            এই বিভাগে ভর্তি হোন
-                        </a>
-                    </div>
-                </div>
-
-                <!-- নূরানী ও জেনারেল বিভাগ কার্ড -->
-                <div class="bg-white border-2 border-islamic-light rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow relative">
-                    <div class="absolute top-0 right-0 opacity-5 text-islamic">
-                        <i class="fas fa-graduation-cap text-[150px] -mt-10 -mr-10"></i>
-                    </div>
-                    <div class="p-10 relative z-10 h-full flex flex-col">
-                        <div class="bg-islamic-light text-islamic w-16 h-16 rounded-full flex items-center justify-center text-3xl mb-6">
-                            <i class="fas fa-pencil-alt"></i>
-                        </div>
-                        <h3 class="font-bengali-serif text-3xl font-bold text-gray-800 mb-4">নূরানী ও জেনারেল বিভাগ</h3>
-                        <p class="text-gray-600 mb-8 leading-relaxed">শিশুদের প্রাথমিক ইসলামী জ্ঞান ও জেনারেল শিক্ষার ভিত্তি মজবুত করার জন্য আমাদের এই বিভাগটি বিশেষভাবে সাজানো হয়েছে।</p>
-                        
-                        <ul class="space-y-4 mb-8 flex-grow">
-                            <li class="flex items-start gap-3 text-gray-700">
-                                <i class="fas fa-check-circle text-islamic mt-1"></i>
-                                <span>কওমী নেসাবের পাশাপাশি আধুনিক সাধারণ শিক্ষার সমন্বয়</span>
-                            </li>
-                            <li class="flex items-start gap-3 text-gray-700">
-                                <i class="fas fa-check-circle text-islamic mt-1"></i>
-                                <span>ধাপে ধাপে কওমী সিলেবাস (কিতাব বিভাগ) অনুসরণ</span>
-                            </li>
-                            <li class="flex items-start gap-3 text-gray-700">
-                                <i class="fas fa-check-circle text-islamic mt-1"></i>
-                                <span>সহজে আরবি, বাংলা, ইংরেজি ও গণিত শিক্ষা</span>
-                            </li>
-                            <li class="flex items-start gap-3 text-gray-700">
-                                <i class="fas fa-check-circle text-islamic mt-1"></i>
-                                <span>নৈতিকতা ও ইসলামী শিষ্টাচার (আদব-আখলাক) প্রশিক্ষণ</span>
-                            </li>
-                        </ul>
-                        
-                        <a href="#admission-form" class="inline-block bg-islamic text-white text-center font-bold px-8 py-3 rounded-lg hover:bg-islamic-dark transition shadow-md">
-                            এই বিভাগে ভর্তি হোন
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ভর্তি বিষয়ক তথ্য ও কাগজপত্র চেকলিস্ট -->
-    <section class="py-16 bg-islamic-light">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col lg:flex-row gap-10 items-center">
-                
-                <!-- কুইক ইনফো -->
-                <div class="w-full lg:w-1/2 space-y-6">
-                    <h2 class="font-bengali-serif text-3xl font-bold text-islamic-dark mb-6">ভর্তির প্রয়োজনীয় তথ্যাবলি</h2>
-                    
-                    <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-islamic flex items-center gap-4">
-                        <div class="bg-islamic/10 p-3 rounded-full text-islamic">
-                            <i class="fas fa-calendar-alt text-2xl"></i>
-                        </div>
-                        <div>
-                            <p class="text-sm text-gray-500 font-bold uppercase">ভর্তি কার্যক্রম</p>
-                            <p class="text-xl font-bold text-gray-800">চলমান (২০২৬ শিক্ষাবর্ষ)</p>
-                        </div>
-                    </div>
-
-                    <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-islamic-accent flex items-center gap-4">
-                        <div class="bg-orange-100 p-3 rounded-full text-islamic-accent">
-                            <i class="fas fa-hourglass-start text-2xl"></i>
-                        </div>
-                        <div>
-                            <p class="text-sm text-gray-500 font-bold uppercase">ক্লাস শুরু</p>
-                            <p class="text-xl font-bold text-gray-800">শীঘ্রই (তারিখ জানানো হবে)</p>
-                        </div>
-                    </div>
-
-                    <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-red-500 flex items-center gap-4">
-                        <div class="bg-red-50 p-3 rounded-full text-red-500">
-                            <i class="fas fa-users text-2xl"></i>
-                        </div>
-                        <div>
-                            <p class="text-sm text-gray-500 font-bold uppercase">আসন সংখ্যা</p>
-                            <p class="text-xl font-bold text-red-600">সীমিত (আগে আসলে আগে ভর্তি)</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- প্রয়োজনীয় কাগজপত্র -->
-                <div class="w-full lg:w-1/2 bg-white rounded-2xl p-8 lg:p-10 shadow-lg relative overflow-hidden">
-                    <div class="absolute -right-10 -top-10 text-islamic/5">
-                        <i class="fas fa-file-contract text-[200px]"></i>
-                    </div>
-                    <div class="relative z-10">
-                        <h3 class="font-bengali-serif text-2xl font-bold text-gray-800 mb-6 border-b pb-4">ভর্তির সময় যা যা প্রয়োজন</h3>
-                        <ul class="space-y-5">
-                            <li class="flex items-center gap-4 p-3 bg-gray-50 rounded-lg border border-gray-100">
-                                <div class="w-10 h-10 rounded-full bg-islamic text-white flex items-center justify-center flex-shrink-0">
-                                    <i class="fas fa-id-card"></i>
-                                </div>
-                                <span class="font-medium text-gray-700 text-lg">শিক্ষার্থীর অনলাইন জন্ম নিবন্ধনের ফটোকপি (১ কপি)</span>
-                            </li>
-                            <li class="flex items-center gap-4 p-3 bg-gray-50 rounded-lg border border-gray-100">
-                                <div class="w-10 h-10 rounded-full bg-islamic text-white flex items-center justify-center flex-shrink-0">
-                                    <i class="fas fa-camera"></i>
-                                </div>
-                                <span class="font-medium text-gray-700 text-lg">শিক্ষার্থীর দুই কপি পাসপোর্ট সাইজ রঙিন ছবি</span>
-                            </li>
-                            <li class="flex items-center gap-4 p-3 bg-gray-50 rounded-lg border border-gray-100">
-                                <div class="w-10 h-10 rounded-full bg-islamic text-white flex items-center justify-center flex-shrink-0">
-                                    <i class="fas fa-certificate"></i>
-                                </div>
-                                <span class="font-medium text-gray-700 text-lg">পূর্ববর্তী শিক্ষা প্রতিষ্ঠানের প্রশংসাপত্র বা ছাড়পত্র (যদি থাকে)</span>
-                            </li>
-                            <li class="flex items-center gap-4 p-3 bg-gray-50 rounded-lg border border-gray-100">
-                                <div class="w-10 h-10 rounded-full bg-islamic text-white flex items-center justify-center flex-shrink-0">
-                                    <i class="fas fa-user-tie"></i>
-                                </div>
-                                <span class="font-medium text-gray-700 text-lg">অভিভাবকের জাতীয় পরিচয়পত্রের (NID) ফটোকপি</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- মাদ্রাসা গ্যালারি সেকশন (আপনার দেওয়া ইমেজগুলো আপডেট করা হয়েছে) -->
-    <section id="gallery" class="py-20 bg-white">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-12">
-                <h2 class="font-bengali-serif text-3xl md:text-4xl font-bold text-islamic-dark mb-4">মাদ্রাসার গ্যালারি</h2>
-                <div class="w-24 h-1 bg-islamic-accent mx-auto rounded mb-4"></div>
-                <p class="text-gray-600 text-lg">এক নজরে আমাদের সুন্দর পরিবেশ ও শিক্ষা কার্যক্রম</p>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-                <!-- গ্যালারি আইটেম ১: নূরানী ক্লাস -->
-                <div class="relative group overflow-hidden rounded-xl aspect-[4/3] bg-gray-200 shadow-md">
-                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhSRG57F7CqJFcXy_74uCXntvQf_9GZCHEyC0fjr_wVxLTEoadPrJZdxTquwCvsN5LAx6owU4cMrsw1YnyRJ3B_TqPg6us015S8S_3Wd6XCNrvZM4_qCz4RIDr-WzkCUrioDMpUGnv9TT8sfHhgaZJR_EZQAQjU5mEt2o4JDevGN-FsSgcMe8F4vfwCaTOS" alt="[নূরানী ক্লাস]" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                        <div class="p-4 text-white">
-                            <h4 class="font-bengali-serif text-xl font-bold">নূরানী ক্লাস</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- গ্যালারি আইটেম ২: জেনারেল ক্লাস -->
-                <div class="relative group overflow-hidden rounded-xl aspect-[4/3] bg-gray-200 shadow-md">
-                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjBNHWWXRU5zZwGnPHgbRIfcyDCp0AHxYHeSHEoxaOz-B5dufTpsr0BKupGvWdErYCJfXSHOslOz6zYbRr620iPKi0GdE053qoQR6zDaVffDUjsJa8ttGmw7uJBEVPXGxT7ojT8TEEtG5ilTEKIM_y3yUjLbCtDNIP_oOLL7ws8A5lAwgTy3GV7-1p5jDLL" alt="[জেনারেল ক্লাস]" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                        <div class="p-4 text-white">
-                            <h4 class="font-bengali-serif text-xl font-bold">জেনারেল ক্লাস</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- গ্যালারি আইটেম ৩: হিফজ ক্লাস -->
-                <div class="relative group overflow-hidden rounded-xl aspect-[4/3] bg-gray-200 shadow-md">
-                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEieGMrXQkDaYwpv5WMGJ-9xYHWGy-PpG5R5zmkoOe2CGPryCXkIueVPlj7C3Lq8ReY0KIc82t4hnlVogjHRlPcEheEVAf3EdAniNYTnpmMFvH8U2m7sZKwgWFFIdAk_QAJ8aJ5c_ce1H1ZLXNDEX9ZC2lU5Uxs491TwYItgOy-dLQEXPu2SmNZy8E1JjODv" alt="[হিফজ ক্লাস]" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                        <div class="p-4 text-white">
-                            <h4 class="font-bengali-serif text-xl font-bold">হিফজ ক্লাস</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- গ্যালারি আইটেম ৪: শান্তিময় ইসলামিক পরিবেশ -->
-                <div class="relative group overflow-hidden rounded-xl aspect-[4/3] bg-gray-200 shadow-md">
-                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEiqa4q5yzKLGb4I1Fz8t-z-4ioUy8yewZAp2Sq0KjANj_ENvD1IRhuqL3EO4cdBU3VKaePLzVBUSp26KMCDnP-6CDL42zr9VDjHGpL2SwldWSEhdIkx_m9LSqULYMNeCOWh5XNExZWWWMqJmxhsbmwTL7YDkpulAahl2ctJ-i6o6jkUboDiKFvhGaq01-Td" alt="[শান্তিময় ইসলামিক পরিবেশ]" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                        <div class="p-4 text-white">
-                            <h4 class="font-bengali-serif text-xl font-bold">শান্তিময় ইসলামিক পরিবেশ</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- গ্যালারি আইটেম ৫: শিক্ষার্থীদের ক্লাস রুম -->
-                <div class="relative group overflow-hidden rounded-xl aspect-[4/3] bg-gray-200 shadow-md">
-                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEg3cwuKb0H-exGUgASB8yovHnnuTHknSTihD4D-PewZopRujv8OlYDeZmCqEWLMZGU4VZiLEDNnmp_kVFTbxIaOvKC5RboZIhjPJlxGQ3MLSppo1X2UhxV1BE_kzV1gERssknPhTwzfiNfecWJliudZAgJYTXx3c6kIejRPTZu4pWV9VcHQk-QKOM7nn_Tx" alt="[শিক্ষার্থীদের ক্লাস রুম]" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                        <div class="p-4 text-white">
-                            <h4 class="font-bengali-serif text-xl font-bold">শিক্ষার্থীদের ক্লাস রুম</h4>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- গ্যালারি আইটেম ৬: মাদ্রাসার পরিচিতি ও লোগো -->
-                <div class="relative group overflow-hidden rounded-xl aspect-[4/3] bg-islamic-light/50 shadow-md border-2 border-dashed border-islamic flex flex-col items-center justify-center p-6 text-center hover:bg-white transition-all duration-300">
-                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgckyH3KvDmuqcCkJmyznt3DI8ENiWl-Wo3jE9Wb-pUhk2-WYW0EVwZQ_CkgkI9a06E5d4EBWfMdM4pC3kKVuRfMcdO_82SzEE6_L5ojBj1cyRJwQpwhlmTc6cj0EdQehD5vwPSNJ5c_VE5IPB8Rz66-mzrcKl_Pl7TO87mAQiGKVrUH2YeMmf2Q9MsLt8O" alt="[মারকাজুল নূর লোগো]" class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md mb-3 transition-transform duration-300 group-hover:scale-105">
-                    <h4 class="font-bengali-serif text-lg font-bold text-islamic-dark">মারকাজুল নূর ইসলামিক একাডেমী</h4>
-                    <p class="text-xs text-gray-500 mt-1">দ্বীনি শিক্ষার এক অনন্য বিদ্যাপীঠ</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- সম্মানিত শিক্ষকমণ্ডলী সেকশন -->
-    <section class="py-20 bg-gray-50 islamic-pattern">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="font-bengali-serif text-3xl md:text-4xl font-bold text-islamic-dark mb-4">আমাদের সম্মানিত শিক্ষকমণ্ডলী</h2>
-                <div class="w-24 h-1 bg-islamic-accent mx-auto rounded mb-4"></div>
-                <p class="text-gray-600 text-lg">যাঁদের অক্লান্ত পরিশ্রমে গড়ে উঠছে আগামীর নেতৃত্ব</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                
-                <!-- শিক্ষক ১ -->
-                <div class="bg-white rounded-2xl p-8 text-center shadow-md hover:shadow-xl transition-shadow border-t-4 border-islamic">
-                    <div class="w-32 h-32 mx-auto rounded-full bg-gray-200 mb-6 border-4 border-islamic-light overflow-hidden">
-                        <img src="https://ui-avatars.com/api/?name=Mufti+Abdullah&background=047857&color=fff&size=200" alt="[প্রিন্সিপাল মুফতি আব্দুল্লাহ]" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="font-bengali-serif text-2xl font-bold text-gray-800 mb-1">মুফতি আব্দুল্লাহ আল মামুন</h3>
-                    <p class="text-islamic font-bold mb-3">মুহতামিম (Principal)</p>
-                    <p class="text-gray-600 text-sm mb-2"><i class="fas fa-graduation-cap mr-2"></i>দাওরায়ে হাদিস, দারুল উলুম দেওবন্দ</p>
-                    <p class="text-gray-600 text-sm"><i class="fas fa-briefcase mr-2"></i>অভিজ্ঞতা: ১৫ বছর+</p>
-                </div>
-
-                <!-- শিক্ষক ২ -->
-                <div class="bg-white rounded-2xl p-8 text-center shadow-md hover:shadow-xl transition-shadow border-t-4 border-islamic-accent">
-                    <div class="w-32 h-32 mx-auto rounded-full bg-gray-200 mb-6 border-4 border-orange-100 overflow-hidden">
-                        <img src="https://ui-avatars.com/api/?name=Hafiz+Ibrahim&background=d97706&color=fff&size=200" alt="[হিফজ শিক্ষক হাফেজ মাওলানা ইব্রাহিম]" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="font-bengali-serif text-2xl font-bold text-gray-800 mb-1">হাফেজ মাওলানা ইব্রাহিম</h3>
-                    <p class="text-islamic-accent font-bold mb-3">প্রধান উস্তায, হিফজ বিভাগ</p>
-                    <p class="text-gray-600 text-sm mb-2"><i class="fas fa-graduation-cap mr-2"></i>হিফজ ও কেরাত, মারকাজুল কুরআন</p>
-                    <p class="text-gray-600 text-sm"><i class="fas fa-briefcase mr-2"></i>অভিজ্ঞতা: ১২ বছর</p>
-                </div>
-
-                <!-- শিক্ষক ৩ -->
-                <div class="bg-white rounded-2xl p-8 text-center shadow-md hover:shadow-xl transition-shadow border-t-4 border-islamic">
-                    <div class="w-32 h-32 mx-auto rounded-full bg-gray-200 mb-6 border-4 border-islamic-light overflow-hidden">
-                        <img src="https://ui-avatars.com/api/?name=Maulana+Jubayer&background=047857&color=fff&size=200" alt="[কিতাব শিক্ষক মাওলানা জুবায়ের]" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="font-bengali-serif text-2xl font-bold text-gray-800 mb-1">মাওলানা জুবায়ের আহমেদ</h3>
-                    <p class="text-islamic font-bold mb-3">উস্তায, কিতাব ও জেনারেল বিভাগ</p>
-                    <p class="text-gray-600 text-sm mb-2"><i class="fas fa-graduation-cap mr-2"></i>এম.এ (ইসলামিক স্টাডিজ)</p>
-                    <p class="text-gray-600 text-sm"><i class="fas fa-briefcase mr-2"></i>অভিজ্ঞতা: ১০ বছর</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- অনলাইন ভর্তি আবেদন ফর্ম সেকশন -->
-    <section id="admission-form" class="py-20 bg-islamic-dark relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10">
-            <svg class="absolute left-0 top-0 w-64 h-64 text-white" fill="currentColor" viewBox="0 0 100 100"><path d="M50 0L100 50L50 100L0 50Z" opacity="0.3"/><circle cx="50" cy="50" r="30"/></svg>
-            <svg class="absolute right-0 bottom-0 w-96 h-96 text-white" fill="currentColor" viewBox="0 0 100 100"><path d="M0 0H100V100H0V0Z" opacity="0.2"/><path d="M50 0V100M0 50H100" stroke="currentColor" stroke-width="2"/></svg>
-        </div>
-
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden">
-                <div class="bg-islamic p-6 md:p-8 text-center text-white">
-                    <h2 class="font-bengali-serif text-3xl font-bold mb-2"><i class="fas fa-file-alt mr-2"></i> অনলাইনে ভর্তি আবেদন ফর্ম</h2>
-                    <p class="text-islamic-light">ফর্মটি সঠিকভাবে পূরণ করে জমা দিন। আমাদের প্রতিনিধি আপনার সাথে যোগাযোগ করবেন।</p>
-                </div>
-                
-                <form id="admissionForm" class="p-6 md:p-10 space-y-6">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <!-- শিক্ষার্থীর নাম -->
-                        <div>
-                            <label for="studentName" class="block text-sm font-medium text-gray-700 mb-1">শিক্ষার্থীর নাম (বাংলায়) <span class="text-red-500">*</span></label>
-                            <input type="text" id="studentName" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-islamic focus:border-islamic transition-colors" placeholder="উদাঃ মোঃ আব্দুল্লাহ">
-                        </div>
-                        
-                        <!-- বয়স -->
-                        <div>
-                            <label for="age" class="block text-sm font-medium text-gray-700 mb-1">শিক্ষার্থীর বয়স <span class="text-red-500">*</span></label>
-                            <input type="number" id="age" required min="4" max="20" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-islamic focus:border-islamic transition-colors" placeholder="বয়স লিখুন">
-                        </div>
-
-                        <!-- ভর্তিচ্ছু বিভাগ -->
-                        <div>
-                            <label for="department" class="block text-sm font-medium text-gray-700 mb-1">ভর্তিচ্ছু বিভাগ <span class="text-red-500">*</span></label>
-                            <select id="department" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-islamic focus:border-islamic transition-colors bg-white">
-                                <option value="" disabled selected>বিভাগ নির্বাচন করুন</option>
-                                <option value="noorani">নূরানী বিভাগ</option>
-                                <option value="hifz">হিফজুল কুরআন বিভাগ</option>
-                                <option value="kitab">কিতাব (জেনারেল) বিভাগ</option>
-                            </select>
-                        </div>
-
-                        <!-- ক্লাস -->
-                        <div>
-                            <label for="classApplied" class="block text-sm font-medium text-gray-700 mb-1">ভর্তিচ্ছু শ্রেণি (যদি প্রযোজ্য হয়)</label>
-                            <input type="text" id="classApplied" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-islamic focus:border-islamic transition-colors" placeholder="উদাঃ প্লে / প্রথম / দ্বিতীয়">
-                        </div>
-
-                        <!-- অভিভাবকের নাম -->
-                        <div>
-                            <label for="guardianName" class="block text-sm font-medium text-gray-700 mb-1">পিতা/অভিভাবকের নাম <span class="text-red-500">*</span></label>
-                            <input type="text" id="guardianName" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-islamic focus:border-islamic transition-colors" placeholder="অভিভাবকের নাম লিখুন">
-                        </div>
-
-                        <!-- মোবাইল নম্বর -->
-                        <div>
-                            <label for="mobile" class="block text-sm font-medium text-gray-700 mb-1">মোবল নম্বর (সচল) <span class="text-red-500">*</span></label>
-                            <div class="flex">
-                                <span class="inline-flex items-center px-4 rounded-l-lg border border-r-0 border-gray-300 bg-gray-50 text-gray-500 font-bold">
-                                    +880
-                                </span>
-                                <input type="tel" id="mobile" required pattern="[0-9]{10}" class="w-full px-4 py-3 rounded-r-lg border border-gray-300 focus:ring-2 focus:ring-islamic focus:border-islamic transition-colors" placeholder="1XXXXXXXXX">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- ঠিকানা -->
-                    <div>
-                        <label for="address" class="block text-sm font-medium text-gray-700 mb-1">বর্তমান ঠিকানা <span class="text-red-500">*</span></label>
-                        <textarea id="address" required rows="3" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-islamic focus:border-islamic transition-colors" placeholder="গ্রাম/মহল্লা, ডাকঘর, থানা, জেলা"></textarea>
-                    </div>
-
-                    <!-- সাবমিট বাটন -->
-                    <div class="pt-4">
-                        <button type="submit" class="w-full bg-islamic-accent hover:bg-yellow-600 text-white font-bold text-lg py-4 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2">
-                            <i class="fas fa-paper-plane"></i> ভর্তি আবেদন পাঠান
-                        </button>
-                        <p class="text-center text-sm text-gray-500 mt-4"><i class="fas fa-lock mr-1"></i> আপনার প্রদত্ত তথ্য আমাদের কাছে সম্পূর্ণ নিরাপদ।</p>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- সাকসেস মোডাল -->
-    <div id="successModal" class="fixed inset-0 z-[100] bg-black/50 items-center justify-center backdrop-blur-sm px-4">
-        <div class="bg-white rounded-2xl p-8 max-w-md w-full text-center shadow-2xl transform scale-100 transition-transform">
-            <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i class="fas fa-check text-4xl text-green-500"></i>
-            </div>
-            <h3 class="font-bengali-serif text-2xl font-bold text-gray-800 mb-2">আলহামদুলিল্লাহ!</h3>
-            <p class="text-gray-600 mb-6">আপনার আবেদন সফলভাবে জমা হয়েছে। আমাদের ভর্তি শাখা থেকে খুব শীঘ্রই আপনার সাথে যোগাযোগ করা হবে।</p>
-            <button id="closeModal" class="bg-islamic text-white px-8 py-2.5 rounded-lg font-bold hover:bg-islamic-dark transition w-full">
-                ঠিক আছে
+          <!-- Mobile menu trigger -->
+          <div class="md:hidden flex items-center">
+            <button id="mobile-menu-btn" class="text-brand-900 p-2 focus:outline-none" aria-label="মেনু খুলুন" onclick="toggleMobileMenu()">
+              <i data-lucide="menu" class="w-7 h-7"></i>
             </button>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <!-- অভিভাবকদের মতামত সেকশন -->
-    <section class="py-20 bg-gray-50">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="font-bengali-serif text-3xl md:text-4xl font-bold text-islamic-dark mb-4">অভিভাবকদের মতামত</h2>
-                <div class="w-24 h-1 bg-islamic-accent mx-auto rounded mb-4"></div>
-            </div>
+      <!-- Mobile dropdown layout -->
+      <div id="mobile-dropdown" class="hidden md:hidden bg-white border-b border-brand-100 px-4 pt-2 pb-6 space-y-3 shadow-xl fade-in">
+        <button onclick="showPage('home'); toggleMobileMenu();" class="block w-full text-left px-4 py-3 text-base font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-700 rounded-lg">হোম</button>
+        <button onclick="scrollToSection('curriculum'); toggleMobileMenu();" class="block w-full text-left px-4 py-3 text-base font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-700 rounded-lg">কোর্সের মডিউল সমূহ</button>
+        <button onclick="showStatusChecker(); toggleMobileMenu();" class="block w-full text-left px-4 py-3 text-base font-medium text-slate-700 hover:bg-brand-50 hover:text-brand-700 rounded-lg">ভর্তি স্ট্যাটাস</button>
+        <button onclick="showPage('register'); toggleMobileMenu();" class="w-full bg-amber-500 text-white py-3 rounded-lg font-bold text-center block shadow-md">নিবন্ধন করুন</button>
+      </div>
+    </nav>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- রিভিউ ১ -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative">
-                    <i class="fas fa-quote-right text-4xl text-islamic/10 absolute top-6 right-6"></i>
-                    <div class="flex text-yellow-400 mb-4 text-sm">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="text-gray-600 mb-6 italic">"আমার ছেলে এই মাদ্রাসার হিফজ বিভাগে পড়ছে। উস্তাযদের আন্তরিকতা এবং পড়াশোনার মান দেখে আমি সত্যিই মুগ্ধ। আল্লাহ এই প্রতিষ্ঠানকে কবুল করুন।"</p>
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-islamic-light rounded-full flex items-center justify-center text-islamic font-bold">আঃ</div>
-                        <div>
-                            <h4 class="font-bold text-gray-800">মোঃ আব্দুর রহমান</h4>
-                            <p class="text-sm text-gray-500">অভিভাবক (হিফজ শাখা)</p>
-                        </div>
-                    </div>
-                </div>
+    <!-- Content Area -->
+    <main class="pt-20 flex-grow">
 
-                <!-- রিভিউ ২ -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative">
-                    <i class="fas fa-quote-right text-4xl text-islamic/10 absolute top-6 right-6"></i>
-                    <div class="flex text-yellow-400 mb-4 text-sm">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="text-gray-600 mb-6 italic">"নূরানী বিভাগে আমার বাচ্চার আরবি ও বাংলা হাতের লেখা এবং পড়ার উন্নতি অভাবনীয়। এখানকার ইসলামিক পরিবেশ শিশুদের জন্য খুবই উপযোগী।"</p>
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-islamic-light rounded-full flex items-center justify-center text-islamic font-bold">কঃ</div>
-                        <div>
-                            <h4 class="font-bold text-gray-800">কাজী শফিকুল ইসলাম</h4>
-                            <p class="text-sm text-gray-500">অভিভাবক (নূরানী শাখা)</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- রিভিউ ৩ -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 relative">
-                    <i class="fas fa-quote-right text-4xl text-islamic/10 absolute top-6 right-6"></i>
-                    <div class="flex text-yellow-400 mb-4 text-sm">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="text-gray-600 mb-6 italic">"জেনারেল বিষয়ের সাথে কওমী সিলেবাসের এমন চমৎকার সমন্বয় খুব কম প্রতিষ্ঠানেই দেখেছি। শিক্ষকদের নিয়মিত মনিটরিং প্রশংসনীয়।"</p>
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-islamic-light rounded-full flex items-center justify-center text-islamic font-bold">সঃ</div>
-                        <div>
-                            <h4 class="font-bold text-gray-800">সৈয়দ তারেক হুসাইন</h4>
-                            <p class="text-sm text-gray-500">অভিভাবক (জেনারেল শাখা)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- সাধারণ জিজ্ঞাসা (FAQ) সেকশন -->
-    <section class="py-20 bg-white">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="font-bengali-serif text-3xl md:text-4xl font-bold text-islamic-dark mb-4">সাধারণ জিজ্ঞাসা (FAQ)</h2>
-                <div class="w-24 h-1 bg-islamic-accent mx-auto rounded mb-4"></div>
-            </div>
-
-            <div class="max-w-3xl mx-auto space-y-4">
-                <!-- FAQ ১ -->
-                <div class="faq-item border border-gray-200 rounded-lg overflow-hidden">
-                    <button class="w-full flex justify-between items-center p-5 bg-gray-50 hover:bg-gray-100 transition focus:outline-none">
-                        <span class="font-bold text-gray-800 text-left text-lg">ভর্তি কীভাবে করবো?</span>
-                        <i class="fas fa-chevron-down text-islamic faq-icon transition-transform duration-300"></i>
-                    </button>
-                    <div class="faq-content hidden p-5 bg-white border-t border-gray-200 text-gray-600 leading-relaxed">
-                        আপনি আমাদের ওয়েবসাইটের 'অনলাইনে ভর্তি আবেদন' ফর্মটি পূরণ করে সাবমিট করতে পারেন অথবা সরাসরি মাদ্রাসার অফিসে এসে ভর্তি ফর্ম সংগ্রহ করে জমা দিতে পারেন।
-                    </div>
-                </div>
-
-                <!-- FAQ ২ -->
-                <div class="faq-item border border-gray-200 rounded-lg overflow-hidden">
-                    <button class="w-full flex justify-between items-center p-5 bg-gray-50 hover:bg-gray-100 transition focus:outline-none">
-                        <span class="font-bold text-gray-800 text-left text-lg">ভর্তির জন্য বয়সসীমা কত?</span>
-                        <i class="fas fa-chevron-down text-islamic faq-icon transition-transform duration-300"></i>
-                    </button>
-                    <div class="faq-content hidden p-5 bg-white border-t border-gray-200 text-gray-600 leading-relaxed">
-                        নূরানী বিভাগে ভর্তির জন্য ন্যূনতম বয়স ৪ বছর। হিফজ এবং জেনারেল বিভাগের বয়সসীমা পূর্ববর্তী যোগ্যতা অনুযায়ী নির্ধারিত হয়। বিস্তারিত জানতে অফিসে যোগাযোগ করুন।
-                    </div>
-                </div>
-
-                <!-- FAQ ৩ -->
-                <div class="faq-item border border-gray-200 rounded-lg overflow-hidden">
-                    <button class="w-full flex justify-between items-center p-5 bg-gray-50 hover:bg-gray-100 transition focus:outline-none">
-                        <span class="font-bold text-gray-800 text-left text-lg">আবাসিক সুবিধা আছে কি?</span>
-                        <i class="fas fa-chevron-down text-islamic faq-icon transition-transform duration-300"></i>
-                    </button>
-                    <div class="faq-content hidden p-5 bg-white border-t border-gray-200 text-gray-600 leading-relaxed">
-                        হ্যাঁ, হিফজ ও কিতাব বিভাগের ছাত্রদের জন্য উন্নতমানের স্বাস্থ্যসম্মত আবাসিক সুবিধা রয়েছে। এছাড়া ডে-কেয়ার সুবিধাও বিদ্যমান।
-                    </div>
-                </div>
-
-                <!-- FAQ ৪ -->
-                <div class="faq-item border border-gray-200 rounded-lg overflow-hidden">
-                    <button class="w-full flex justify-between items-center p-5 bg-gray-50 hover:bg-gray-100 transition focus:outline-none">
-                        <span class="font-bold text-gray-800 text-left text-lg">মাসিক খরচ বা বেতন কত?</span>
-                        <i class="fas fa-chevron-down text-islamic faq-icon transition-transform duration-300"></i>
-                    </button>
-                    <div class="faq-content hidden p-5 bg-white border-t border-gray-200 text-gray-600 leading-relaxed">
-                        বিভাগ (আবাসিক/অনাবাসিক) অনুযায়ী মাসিক খরচ ভিন্ন হয়ে থাকে। বিস্তারিত ফি কাঠামো জানতে অনুগ্রহ করে আমাদের দেওয়া মোবাইল নম্বরে কল করুন।
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- যোগাযোগ ও মানচিত্র সেকশন -->
-    <section id="contact" class="py-20 bg-islamic-light">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                
-                <!-- যোগাযোগের তথ্য -->
-                <div>
-                    <h2 class="font-bengali-serif text-3xl font-bold text-islamic-dark mb-6">যোগাযোগ করুন</h2>
-                    <p class="text-gray-600 mb-8">ভর্তি সংক্রান্ত যেকোনো তথ্যের জন্য আমাদের সাথে সরাসরি যোগাযোগ করুন অথবা মাদ্রাসায় ভিজিট করুন।</p>
-                    
-                    <div class="space-y-6">
-                        <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-islamic shadow-sm flex-shrink-0">
-                                <i class="fas fa-map-marker-alt text-xl"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-800 text-lg">ঠিকানা</h4>
-                                <p class="text-gray-600">মারকাজুল নূর ইসলামিক একাডেমী,<br>মেইন রোড, মাদ্রাসা পাড়া, ঢাকা-১২০০</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-islamic shadow-sm flex-shrink-0">
-                                <i class="fas fa-phone-alt text-xl"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-800 text-lg">মোবাইল</h4>
-                                <p class="text-gray-600"><a href="tel:+8801700000000" class="hover:text-islamic transition">+৮৮০ ১৭০০-০০০০০০</a></p>
-                                <p class="text-gray-600"><a href="tel:+8801800000000" class="hover:text-islamic transition">+৮৮০ ১৮০০-০০০০০০</a></p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-sm flex-shrink-0">
-                                <i class="fab fa-whatsapp text-2xl"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-800 text-lg">WhatsApp</h4>
-                                <p class="text-gray-600"><a href="https://wa.me/8801700000000" target="_blank" class="hover:text-[#25D366] transition">+৮৮০ ১৭০০-০০০০০০</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- গুগল ম্যাপস এমবেড -->
-                <div class="h-[400px] w-full rounded-2xl overflow-hidden shadow-lg border-4 border-white">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14608.036944850338!2d90.3654215!3d23.74705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b33cffc3fb%3A0x4a826f475fd312af!2sDhanmondi%2C%20Dhaka%201205!5e0!3m2!1sen!2sbd!4v1716320000000!5m2!1sen!2sbd" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ফাইনাল কল টু অ্যাকশন (CTA) সেকশন -->
-    <section class="py-24 bg-islamic text-center relative overflow-hidden bg-cover bg-center" style="background-image: url('https://blogger.googleusercontent.com/img/a/AVvXsEgckyH3KvDmuqcCkJmyznt3DI8ENiWl-Wo3jE9Wb-pUhk2-WYW0EVwZQ_CkgkI9a06E5d4EBWfMdM4pC3kKVuRfMcdO_82SzEE6_L5ojBj1cyRJwQpwhlmTc6cj0EdQehD5vwPSNJ5c_VE5IPB8Rz66-mzrcKl_Pl7TO87mAQiGKVrUH2YeMmf2Q9MsLt8O');">
-        <div class="absolute inset-0 bg-islamic-dark/90 mix-blend-multiply"></div>
-        <div class="absolute inset-0 islamic-pattern opacity-10"></div>
+      <!-- ==================== HOME PAGE SECTION ==================== -->
+      <div id="home-page" class="fade-in">
         
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-white">
-            <h2 class="font-bengali-serif text-4xl md:text-5xl font-bold mb-6">আসন সীমিত — আজই ভর্তি সম্পন্ন করুন</h2>
-            <p class="text-xl md:text-2xl font-light mb-10 max-w-2xl mx-auto">"আপনার সন্তানকে কুরআন ও সুন্নাহভিত্তিক আদর্শ শিক্ষায় গড়ে তুলুন এবং দুনিয়া ও আখিরাতের কল্যাণ নিশ্চিত করুন।"</p>
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden bg-gradient-to-br from-brand-950 via-brand-900 to-slate-900 text-white py-16 sm:py-24">
+          <!-- Animated Background Blob -->
+          <div class="absolute -top-40 -right-40 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl blob-float"></div>
+          <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl blob-float" style="animation-delay: 2s;"></div>
+          
+          <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center space-x-2 bg-brand-800/60 rounded-full px-4 py-2 mb-6 sm:mb-8 border border-brand-700/50">
+              <i data-lucide="sparkles" class="text-amber-400 w-4 h-4"></i>
+              <span class="text-brand-100 text-xs sm:text-sm font-medium tracking-wide">স্মার্টফোন ও কম্পিউটার দিয়ে প্রফেশনাল এনিমেশন শিখুন</span>
+            </div>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-4 sm:mb-6 text-white leading-snug sm:leading-tight">
+              মোবাইল ও কম্পিউটার দিয়ে সহজে <br class="hidden md:block" />
+              <span class="text-amber-400">প্রফেশনাল AI কার্টুন ভিডিও তৈরি করুন</span>
+            </h1>
+            <p class="mt-4 sm:mt-6 text-base sm:text-lg lg:text-xl max-w-3xl mx-auto text-brand-100 leading-relaxed px-2">
+              আজই আমাদের প্রিমিয়াম AI কার্টুন ভিডিও মেকিং কোর্সে নিবন্ধন করুন এবং সম্পূর্ণ প্র্যাক্টিক্যাল প্রজেক্টের মাধ্যমে ইউটিউব, ফেসবুক বা ফ্রিল্যান্সিং করে ক্যারিয়ার গড়ার চমৎকার যাত্রা শুরু করুন।
+            </p>
+
+            <!-- Real-time Countdown Timer Box -->
+            <div class="mt-8 max-w-lg mx-auto bg-white/10 backdrop-blur-md rounded-2xl p-4 border border-white/20">
+                <p class="text-amber-400 text-xs sm:text-sm font-bold uppercase tracking-widest mb-2">৮০% মেগা ডিসকাউন্ট অফার শেষ হতে বাকি</p>
+                <div class="grid grid-cols-4 gap-2 text-center">
+                    <div class="bg-brand-900/80 p-2 rounded-lg">
+                        <span id="days" class="text-xl sm:text-2xl font-bold block text-white">০২</span>
+                        <span class="text-[10px] text-brand-200">দিন</span>
+                    </div>
+                    <div class="bg-brand-900/80 p-2 rounded-lg">
+                        <span id="hours" class="text-xl sm:text-2xl font-bold block text-white">১৪</span>
+                        <span class="text-[10px] text-brand-200">ঘণ্টা</span>
+                    </div>
+                    <div class="bg-brand-900/80 p-2 rounded-lg">
+                        <span id="minutes" class="text-xl sm:text-2xl font-bold block text-white">৪৫</span>
+                        <span class="text-[10px] text-brand-200">মিনিট</span>
+                    </div>
+                    <div class="bg-brand-900/80 p-2 rounded-lg">
+                        <span id="seconds" class="text-xl sm:text-2xl font-bold block text-white">৫৯</span>
+                        <span class="text-[10px] text-brand-200">সেকেন্ড</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 sm:mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+              <button onclick="showPage('register')" class="w-full sm:w-auto bg-amber-500 hover:bg-amber-400 text-brand-950 px-8 py-4 rounded-full font-bold text-base sm:text-lg transition-all shadow-lg hover:shadow-amber-500/25 flex items-center justify-center group">
+                নিবন্ধন করুন
+                <i data-lucide="arrow-right" class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+              </button>
+              <button onclick="scrollToSection('curriculum')" class="w-full sm:w-auto bg-transparent border-2 border-white/30 hover:border-white text-white px-8 py-3.5 rounded-full font-semibold text-base transition-all hover:bg-white/10 flex items-center justify-center">
+                <i data-lucide="play-circle" class="mr-2 w-5 h-5"></i> কোর্সের মডিউল দেখুন
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-16 sm:py-20 bg-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 sm:mb-16">
+              <span class="text-brand-600 text-xs sm:text-sm font-extrabold uppercase tracking-widest bg-brand-50 px-4 py-1.5 rounded-full">কোর্সের সুবিধাসমূহ</span>
+              <h2 class="text-2xl sm:text-3xl font-bold text-brand-900 px-2 mt-3">এই কোর্সে আপনি কী কী শিখবেন?</h2>
+              <div class="w-20 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+            </div>
             
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#admission-form" class="bg-islamic-accent hover:bg-yellow-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition shadow-lg flex items-center justify-center gap-2">
-                    <i class="fas fa-edit"></i> ভর্তি আবেদন করুন
-                </a>
-                <a href="tel:+8801700000000" class="bg-white text-islamic-dark hover:bg-gray-100 px-8 py-4 rounded-lg font-bold text-lg transition shadow-lg flex items-center justify-center gap-2">
-                    <i class="fas fa-phone-alt"></i> কল করুন
-                </a>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+              <!-- Feature Card 1 -->
+              <div class="bg-brand-50/50 border border-brand-100 rounded-2xl p-6 sm:p-8 text-center hover:shadow-xl transition-shadow group">
+                <div class="inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-brand-100 text-brand-600 mb-5 group-hover:scale-110 transition-transform">
+                  <i data-lucide="smartphone" class="w-7 h-7 sm:w-8 sm:h-8"></i>
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold text-brand-900 mb-2">মোবাইল ফ্রেন্ডলি এনিমেশন</h3>
+                <p class="text-slate-600 leading-relaxed text-sm">ভারী কোনো ল্যাপটপ বা কম্পিউটার ছাড়াই আপনার হাতের মোবাইল দিয়ে আকর্ষণীয় ৩D কার্টুন ভিডিও তৈরি করুন।</p>
+              </div>
+              <!-- Feature Card 2 -->
+              <div class="bg-brand-50/50 border border-brand-100 rounded-2xl p-6 sm:p-8 text-center hover:shadow-xl transition-shadow group">
+                <div class="inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-brand-100 text-brand-600 mb-5 group-hover:scale-110 transition-transform">
+                  <i data-lucide="mic" class="w-7 h-7 sm:w-8 sm:h-8"></i>
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold text-brand-900 mb-2">এআই ভয়েস ও স্ক্রিপ্ট</h3>
+                <p class="text-slate-600 leading-relaxed text-sm">কোনো জটিলতা ছাড়াই আর্টিফিসিয়াল ইন্টেলিজেন্স বা AI দিয়ে প্রফেশনাল লেভেলের ভয়েস ওভার এবং নিখুঁত স্ক্রিপ্ট তৈরি শিখুন।</p>
+              </div>
+              <!-- Feature Card 3 -->
+              <div class="bg-brand-50/50 border border-brand-100 rounded-2xl p-6 sm:p-8 text-center hover:shadow-xl transition-shadow group">
+                <div class="inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-brand-100 text-brand-600 mb-5 group-hover:scale-110 transition-transform">
+                  <i data-lucide="dollar-sign" class="w-7 h-7 sm:w-8 sm:h-8"></i>
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold text-brand-900 mb-2">নিবন্ধন ও আয়</h3>
+                <p class="text-slate-600 leading-relaxed text-sm">ইউটিউব ও ফেসবুকে কপিরাইট ছাড়া কীভাবে আপনার বানানো কার্টুন আপলোড করে সফলভাবে আয় করবেন তার লাইভ সিক্রেট গাইডলাইন।</p>
+              </div>
+              <!-- Feature Card 4 -->
+              <div class="bg-brand-50/50 border border-brand-100 rounded-2xl p-6 sm:p-8 text-center hover:shadow-xl transition-shadow group">
+                <div class="inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-brand-100 text-brand-600 mb-5 group-hover:scale-110 transition-transform">
+                  <i data-lucide="users" class="w-7 h-7 sm:w-8 sm:h-8"></i>
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold text-brand-900 mb-2">লাইফটাইম মেন্টরশিপ</h3>
+                <p class="text-slate-600 leading-relaxed text-sm">ভর্তি হওয়ার পর যেকোনো সমস্যায় মেন্টরের থেকে ডেডিকেটেড লাইভ সাপোর্ট এবং নিয়মিত রিসোর্স আপডেট সাপোর্ট পাবেন।</p>
+              </div>
             </div>
-        </div>
-    </section>
+          </div>
+        </section>
 
-    <!-- ফুটার সেকশন -->
-    <footer class="bg-gray-900 text-white pt-16 pb-8 border-t-4 border-islamic-accent">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <!-- Syllabus / Curriculum Section -->
+        <section id="curriculum" class="py-16 sm:py-20 bg-slate-50 border-t border-b border-brand-100">
+          <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10 sm:mb-12">
+              <span class="text-brand-600 text-xs sm:text-sm font-extrabold uppercase tracking-widest bg-brand-100 px-4 py-1.5 rounded-full">পূর্ণাঙ্গ সিলেবাস</span>
+              <h2 class="text-2xl sm:text-3xl font-bold text-brand-900 mt-3">কোর্সের মডিউল সমূহ</h2>
+              <p class="text-slate-500 text-sm mt-2">ধাপে ধাপে সাজানো প্রফেশনাল কারিকুলাম</p>
+              <div class="w-16 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="space-y-4">
+              <!-- Module 1 -->
+              <div class="bg-white rounded-xl shadow-sm border border-brand-100 overflow-hidden">
+                <button onclick="toggleSyllabus(1)" class="w-full text-left px-5 sm:px-6 py-4 flex justify-between items-center font-bold text-brand-900 hover:bg-brand-50/50 transition-colors">
+                  <span class="text-sm sm:text-base flex items-center gap-3"><span class="bg-brand-100 text-brand-700 w-8 h-8 rounded-full flex items-center justify-center text-xs">০১</span> এনিমেশনের বেসিক ধারণা ও স্ক্রিপ্টিং</span>
+                  <i data-lucide="chevron-down" id="syllabus-icon-1" class="transform transition-transform text-brand-600 flex-shrink-0 ml-2"></i>
+                </button>
+                <div id="syllabus-ans-1" class="hidden px-5 sm:px-6 py-4 text-slate-600 bg-brand-50/20 border-t border-brand-50 leading-relaxed text-sm">
+                  <ul class="list-disc list-inside space-y-2">
+                    <li>কার্টুন মেকিং এর প্রাথমিক ধারণাসমূহ।</li>
+                    <li>আকর্ষণীয় গল্প এবং স্ক্রিপ্ট লেখার এআই টেকনিক।</li>
+                    <li>মোবাইলে স্ক্রিপ্ট প্রসেসিং ও এডিটিং লেআউট পরিচিতি।</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Module 2 -->
+              <div class="bg-white rounded-xl shadow-sm border border-brand-100 overflow-hidden">
+                <button onclick="toggleSyllabus(2)" class="w-full text-left px-5 sm:px-6 py-4 flex justify-between items-center font-bold text-brand-900 hover:bg-brand-50/50 transition-colors">
+                  <span class="text-sm sm:text-base flex items-center gap-3"><span class="bg-brand-100 text-brand-700 w-8 h-8 rounded-full flex items-center justify-center text-xs">০২</span> ক্যারেক্টার ডিজাইন ও ভয়েস জেনারেশন</span>
+                  <i data-lucide="chevron-down" id="syllabus-icon-2" class="transform transition-transform text-brand-600 flex-shrink-0 ml-2"></i>
+                </button>
+                <div id="syllabus-ans-2" class="hidden px-5 sm:px-6 py-4 text-slate-600 bg-brand-50/20 border-t border-brand-50 leading-relaxed text-sm">
+                  <ul class="list-disc list-inside space-y-2">
+                    <li>২D ও ৩D ক্যারেক্টার কাস্টমাইজেশন (মোবাইল ও পিসিতে)।</li>
+                    <li>এআই দিয়ে প্রফেশনাল ভয়েস ওভার জেনারেট এবং ভয়েস ক্লোনিং পদ্ধতি।</li>
+                    <li>ফ্রি এবং রয়্যালটি-ফ্রি মিউজিক সোর্স নির্বাচন।</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Module 3 -->
+              <div class="bg-white rounded-xl shadow-sm border border-brand-100 overflow-hidden">
+                <button onclick="toggleSyllabus(3)" class="w-full text-left px-5 sm:px-6 py-4 flex justify-between items-center font-bold text-brand-900 hover:bg-brand-50/50 transition-colors">
+                  <span class="text-sm sm:text-base flex items-center gap-3"><span class="bg-brand-100 text-brand-700 w-8 h-8 rounded-full flex items-center justify-center text-xs">০৩</span> ভিডিও রেন্ডারিং ও প্রফেশনাল এডিটিং</span>
+                  <i data-lucide="chevron-down" id="syllabus-icon-3" class="transform transition-transform text-brand-600 flex-shrink-0 ml-2"></i>
+                </button>
+                <div id="syllabus-ans-3" class="hidden px-5 sm:px-6 py-4 text-slate-600 bg-brand-50/20 border-t border-brand-50 leading-relaxed text-sm">
+                  <ul class="list-disc list-inside space-y-2">
+                    <li>সিন ক্রিয়েশন, ক্যামেরা অ্যাঙ্গেল এবং লাইটিং মেকওভার।</li>
+                    <li>ক্যাপকাট (CapCut) এবং কাইনমাস্টার ব্যবহার করে কালার গ্রেডিং।</li>
+                    <li>ভিডিওতে সাউন্ড ইফেক্ট এবং টেক্সট এনিমেশন যুক্ত করা।</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Module 4 -->
+              <div class="bg-white rounded-xl shadow-sm border border-brand-100 overflow-hidden">
+                <button onclick="toggleSyllabus(4)" class="w-full text-left px-5 sm:px-6 py-4 flex justify-between items-center font-bold text-brand-900 hover:bg-brand-50/50 transition-colors">
+                  <span class="text-sm sm:text-base flex items-center gap-3"><span class="bg-brand-100 text-brand-700 w-8 h-8 rounded-full flex items-center justify-center text-xs">০৪</span> ইউটিউব ও ফেসবুক মনিটাইজেশন সিক্রেট</span>
+                  <i data-lucide="chevron-down" id="syllabus-icon-4" class="transform transition-transform text-brand-600 flex-shrink-0 ml-2"></i>
+                </button>
+                <div id="syllabus-ans-4" class="hidden px-5 sm:px-6 py-4 text-slate-600 bg-brand-50/20 border-t border-brand-50 leading-relaxed text-sm">
+                  <ul class="list-disc list-inside space-y-2">
+                    <li>কпиরাইট এড়িয়ে ভিডিও আপলোডের রিয়েল স্ট্র্যাটেজি।</li>
+                    <li>আকর্ষণীয় থাম্বনেইল তৈরি এবং হাই-র‍্যাঙ্কিং এসইও (SEO)।</li>
+                    <li>ফেসবুক এড ব্রেক্স এবং ইউটিউব পার্টনার প্রোগ্রাম গাইড।</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Testimonials Section -->
+        <section class="py-16 sm:py-20 bg-brand-900 text-white relative overflow-hidden">
+          <div class="absolute inset-0 bg-brand-950/40 pointer-events-none"></div>
+          <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
+            <div class="text-center mb-12 sm:mb-16">
+              <span class="text-amber-400 text-xs sm:text-sm font-extrabold uppercase tracking-widest bg-brand-800/80 px-4 py-1.5 rounded-full border border-brand-700">সাফল্যের গল্প</span>
+              <h2 class="text-2xl sm:text-3xl font-bold text-white px-2 mt-3">সফল শিক্ষার্থীদের অভিজ্ঞতা</h2>
+              <div class="w-20 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+              <!-- Testimonial 1 -->
+              <div class="bg-brand-800/50 p-6 sm:p-8 rounded-2xl relative border border-brand-700/50 flex flex-col justify-between hover:-translate-y-1 transition-transform">
+                <div>
+                  <i data-lucide="quote" class="absolute top-6 right-6 text-brand-600/20 w-10 h-10 sm:w-12 sm:h-12"></i>
+                  <p class="text-brand-50 text-sm sm:text-base mb-6 relative z-10 italic leading-relaxed">"কোর্সটি করার পর আমি আমার প্রথম ইউটিউব চ্যানেলের জন্য এনিমেশন ভিডিও বানিয়েছি এবং অলরেডি ভিউ আসতে শুরু করেছে। ধন্যবাদ মেন্টরকে!"</p>
+                </div>
+                <div class="flex items-center space-x-3 mt-auto border-t border-brand-800/80 pt-4">
+                  <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_etl93Bmxupuq3BjL9odGjnilxh4bSkLoeu2Yk5Wm_5A_qJGSkVMfyp_T83AmwFBE-YTJ_MLB_Y9GikPnJDZSTbaSsma9zUKHMRpLVSiE7TspT-LzyoAbB-Kn198HYw3prjwySN7hcrUfkMxKJRaoORa_8kPSnrOYmNen_gMzaoR_CsJCPcACxHicG9FW/s320/muslim-boy-touching-neck-xijc9gqm90vyhvu9.jpg" 
+                    alt="আব্দুর রহমান" 
+                    class="w-12 h-12 rounded-full object-cover border-2 border-amber-500 shadow-md flex-shrink-0"
+                    onerror="this.src='https://placehold.co/100x100/0050b3/ffffff?text=AR'"
+                  />
+                  <div>
+                    <h4 class="font-bold text-white text-sm sm:text-base">আব্দুর রহমান</h4>
+                    <span class="text-brand-300 text-xs">ইউটিউবার ও কনটেন্ট ক্রিয়েটর</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Testimonial 2 -->
+              <div class="bg-brand-800/50 p-6 sm:p-8 rounded-2xl relative border border-brand-700/50 flex flex-col justify-between hover:-translate-y-1 transition-transform">
+                <div>
+                  <i data-lucide="quote" class="absolute top-6 right-6 text-brand-600/20 w-10 h-10 sm:w-12 sm:h-12"></i>
+                  <p class="text-brand-50 text-sm sm:text-base mb-6 relative z-10 italic leading-relaxed">"মোবাইল দিয়ে যে এত সুন্দর কার্টুন ভিডিও বানানো সম্ভব তা এই কোর্স না করলে বিশ্বাস হতো না। প্রতিটি ট্রিকস খুব চমৎকারভাবে দেখানো হয়েছে।"</p>
+                </div>
+                <div class="flex items-center space-x-3 mt-auto border-t border-brand-800/80 pt-4">
+                  <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidXmsEPTAfGXgB8x-A_NWq_8s0ilBW7v9N0fTYKf1n_zb0NmLE0luvJT34bt6mjMFeS98YmGlx1GfRZwLrB3QKKTLY6fn3_NzKTPZoxRHkrSPldE-rf6AmJlN6-AMEaN7nNeT7jJTY3mQOICF-Ln-q3rOAUqAezuDPeeTCcE5ZP697DPj_8ObQDCWPy6NZ/s320/1000_F_354661318_fuChM1w9NwhKe1ho2WLOp1i6mwInGdOm.jpg" 
+                    alt="মাহমুদুল্লাহ" 
+                    class="w-12 h-12 rounded-full object-cover border-2 border-amber-500 shadow-md flex-shrink-0"
+                    onerror="this.src='https://placehold.co/100x100/0050b3/ffffff?text=M'"
+                  />
+                  <div>
+                    <h4 class="font-bold text-white text-sm sm:text-base">মাহমুদুল্লাহ</h4>
+                    <span class="text-brand-300 text-xs">কার্টুন ডিজাইনার</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Testimonial 3 -->
+              <div class="bg-brand-800/50 p-6 sm:p-8 rounded-2xl relative border border-brand-700/50 flex flex-col justify-between hover:-translate-y-1 transition-transform">
+                <div>
+                  <i data-lucide="quote" class="absolute top-6 right-6 text-brand-600/20 w-10 h-10 sm:w-12 sm:h-12"></i>
+                  <p class="text-brand-50 text-sm sm:text-base mb-6 relative z-10 italic leading-relaxed">"আমি এআই ভয়েস ওভার এবং ৩D ক্যারেক্টার ডিজাইন খুব সহজে শিখেছি। সাপোর্ট টিম যেকোনো সমস্যায় সাথে সাথে সাহায্য করে।"</p>
+                </div>
+                <div class="flex items-center space-x-3 mt-auto border-t border-brand-800/80 pt-4">
+                  <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKSUqpnKGrN-eSBT78dxthN9tv0bE6Nz4SgX2jcJ457Nn42tFHCLii3lupBTycz8AYqZ5hS1FMzjPGZ_-8JB2MFW60GD5Vi3xme1LpwkrEUZX09VGyKvbUqKkHMn0DnB9mv-kz82yWO3XFNpW51Af-zL3XfZ8Y83GF7WY2lbRyPvpN5k47FU9VmXA74hY/s320/7c7fcb47e65fec252042d36326030554.jpg" 
+                    alt="মালিহা ইসলাম" 
+                    class="w-12 h-12 rounded-full object-cover border-2 border-amber-500 shadow-md flex-shrink-0"
+                    onerror="this.src='https://placehold.co/100x100/0050b3/ffffff?text=MI'"
+                  />
+                  <div>
+                    <h4 class="font-bold text-white text-sm sm:text-base">মালিহা ইসলাম</h4>
+                    <span class="text-brand-300 text-xs">কনটেন্ট ডেভেলপার</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-16 sm:py-20 bg-slate-100">
+          <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10 sm:mb-12">
+              <span class="text-brand-600 text-xs sm:text-sm font-extrabold uppercase tracking-widest bg-brand-100 px-4 py-1.5 rounded-full">সাধারণ প্রশ্নাবলী</span>
+              <h2 class="text-2xl sm:text-3xl font-bold text-brand-900 px-2 mt-3">সাধারণ জিজ্ঞাসা (FAQ)</h2>
+              <div class="w-16 h-1 bg-amber-500 mx-auto mt-3 rounded-full"></div>
+            </div>
+            
+            <div class="space-y-4">
+              <!-- FAQ Item 1 -->
+              <div class="bg-white rounded-xl shadow-sm border border-brand-100 overflow-hidden">
+                <button onclick="toggleFAQ(0)" class="w-full text-left px-5 sm:px-6 py-4 flex justify-between items-center font-semibold text-brand-900 hover:bg-brand-50/50 transition-colors">
+                  <span class="text-sm sm:text-base">কোর্সটি করতে কি ল্যাপটপ বা কম্পিউটার লাগবে?</span>
+                  <i data-lucide="chevron-down" id="faq-icon-0" class="transform transition-transform text-brand-600 flex-shrink-0 ml-2"></i>
+                </button>
+                <div id="faq-ans-0" class="hidden px-5 sm:px-6 py-4 text-slate-600 bg-brand-50/30 border-t border-brand-50 leading-relaxed text-sm">
+                  না, আপনার কাছে যদি শুধুমাত্র একটি সাধারণ スマートフォン (স্মার্টফোন) থাকে, তবে সেটি দিয়েই আপনি সম্পূর্ণ প্রফেশনাল কার্টুন এনিমেশন শিখে ভিডিও তৈরি করতে পারবেন।
+                </div>
+              </div>
+              <!-- FAQ Item 2 -->
+              <div class="bg-white rounded-xl shadow-sm border border-brand-100 overflow-hidden">
+                <button onclick="toggleFAQ(1)" class="w-full text-left px-5 sm:px-6 py-4 flex justify-between items-center font-semibold text-brand-900 hover:bg-brand-50/50 transition-colors">
+                  <span class="text-sm sm:text-base">লাইফটাইম এক্সেস বা সাহায্য থাকবে কি?</span>
+                  <i data-lucide="chevron-down" id="faq-icon-1" class="transform transition-transform text-brand-600 flex-shrink-0 ml-2"></i>
+                </button>
+                <div id="faq-ans-1" class="hidden px-5 sm:px-6 py-4 text-slate-600 bg-brand-50/30 border-t border-brand-50 leading-relaxed text-sm">
+                  হ্যাঁ, একবার এই কোর্সে ভর্তি হয়ে গেলে আপনি কোর্সের সব ভিডিও ক্লাস, মেটেরিয়ালস এবং ফিউচার আপডেটের লাইফটাইম অ্যাক্সেস সম্পূর্ণ ফ্রি-তে পাবেন।
+                </div>
+              </div>
+              <!-- FAQ Item 3 -->
+              <div class="bg-white rounded-xl shadow-sm border border-brand-100 overflow-hidden">
+                <button onclick="toggleFAQ(2)" class="w-full text-left px-5 sm:px-6 py-4 flex justify-between items-center font-semibold text-brand-900 hover:bg-brand-50/50 transition-colors">
+                  <span class="text-sm sm:text-base">কার্টুন ভিডিও থেকে কীভাবে আয় করা সম্ভব?</span>
+                  <i data-lucide="chevron-down" id="faq-icon-2" class="transform transition-transform text-brand-600 flex-shrink-0 ml-2"></i>
+                </button>
+                <div id="faq-ans-2" class="hidden px-5 sm:px-6 py-4 text-slate-600 bg-brand-50/30 border-t border-brand-50 leading-relaxed text-sm">
+                  আপনি কার্টুন ভিডিও তৈরি করে নিজের ইউটিউব চ্যানেল বা ফেসবুক পেজে আপলোড করে মনিটাইজেশন পেতে পারেন। এছাড়া বিভিন্ন ফ্রিল্যান্সিং প্ল্যাটফর্মে ক্লায়েন্টের ভিডিও বানিয়ে বড় অংকের টাকা আয় করতে পারেন।
+                </div>
+              </div>
+              <!-- FAQ Item 4 -->
+              <div class="bg-white rounded-xl shadow-sm border border-brand-100 overflow-hidden">
+                <button onclick="toggleFAQ(3)" class="w-full text-left px-5 sm:px-6 py-4 flex justify-between items-center font-semibold text-brand-900 hover:bg-brand-50/50 transition-colors">
+                  <span class="text-sm sm:text-base">ভর্তি ফি কীভাবে পরিশোধ করতে হবে?</span>
+                  <i data-lucide="chevron-down" id="faq-icon-3" class="transform transition-transform text-brand-600 flex-shrink-0 ml-2"></i>
+                </button>
+                <div id="faq-ans-3" class="hidden px-5 sm:px-6 py-4 text-slate-600 bg-brand-50/30 border-t border-brand-50 leading-relaxed text-sm">
+                  নিবন্ধনের ফর্মটি পূরণ করে সাবমিট করার পর আমাদের অ্যাডমিশন টিম আপনার সাথে সরাসরি মোবাইল অথবা হোয়াটসঅ্যাপে যোগাযোগ করবে এবং পেমেন্টের পরবর্তী ধাপগুলো বুঝিয়ে দেবে।
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ==================== REGISTRATION FORM SECTION ==================== -->
+      <div id="registration-page" class="hidden max-w-4xl mx-auto py-8 sm:py-12 px-4 sm:px-6 lg:px-8 fade-in">
+        
+        <!-- Registration Success Card -->
+        <div id="success-card" class="hidden bg-white rounded-3xl p-8 sm:p-12 shadow-xl border border-brand-100 text-center flex flex-col items-center">
+          <div class="w-20 h-20 sm:w-24 sm:h-24 bg-emerald-100 rounded-full flex items-center justify-center mb-6">
+            <i data-lucide="check" class="text-emerald-600 w-10 h-10 sm:w-12 sm:h-12"></i>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-bold text-brand-900 mb-4">নিবন্ধন সফল হয়েছে!</h2>
+          <p class="text-slate-600 mb-8 text-base sm:text-lg leading-relaxed max-w-lg">
+            আলহামদুলিল্লাহ, আপনার তথ্য সফলভাবে জমা দেওয়া হয়েছে। আমাদের কোর্স ম্যানেজমেন্ট ও অ্যাডমিশন টিম খুব দ্রুত আপনার সাথে সরাসরি যোগাযোগ করবে।
+          </p>
+          
+          <!-- Downloadable virtual slip -->
+          <div id="admission-slip" class="bg-slate-50 border border-dashed border-slate-300 rounded-2xl p-6 text-left w-full max-w-md mb-8">
+            <div class="flex justify-between border-b pb-3 mb-4">
+              <span class="font-bold text-brand-900">ভর্তি রশিদ (IIOM Academy)</span>
+              <span class="text-emerald-600 font-semibold">অপেক্ষমান</span>
+            </div>
+            <div class="space-y-2 text-sm text-slate-700">
+              <p><strong>শিক্ষার্থীর নাম:</strong> <span id="slip-name">-</span></p>
+              <p><strong>whatsapp নাম্বার:</strong> <span id="slip-whatsapp">-</span></p>
+              <p><strong>নির্বাচিত কোর্স:</strong> <span id="slip-course">-</span></p>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
+            <button onclick="window.print()" class="bg-brand-100 hover:bg-brand-200 text-brand-900 px-6 py-3 rounded-full font-semibold transition-colors flex items-center justify-center gap-2">
+              <i data-lucide="printer" class="w-5 h-5"></i> রশিদ প্রিন্ট করুন
+            </button>
+            <button onclick="showPage('home')" class="bg-brand-700 hover:bg-brand-800 text-white px-8 py-3 rounded-full font-semibold transition-colors shadow-md">
+              হোমপেজে ফিরে যান
+            </button>
+          </div>
+        </div>
+
+        <!-- Main Form Grid -->
+        <div id="main-form-card" class="bg-white shadow-xl rounded-3xl overflow-hidden border border-brand-100">
+          <!-- Form Header -->
+          <div class="bg-brand-900 text-white py-8 sm:py-10 px-6 sm:px-8 text-center relative overflow-hidden">
+            <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(#fbbf24 2px, transparent 2px); background-size: 20px 20px;"></div>
+            <h2 class="text-2xl sm:text-3xl font-bold relative z-10">অনলাইন Ai Cartoon ভিডিও কোর্স ভর্তি ফরম</h2>
+            <p class="text-brand-200 mt-1 sm:mt-2 text-sm sm:text-base relative z-10">আপনার সঠিক তথ্যগুলো দিয়ে ফরমটি পূরণ করুন।</p>
+            <p class="text-amber-400 mt-2 text-xs sm:text-sm font-semibold relative z-10 flex items-center justify-center gap-1.5">
+              <i data-lucide="phone" class="w-4 h-4"></i> হেল্পলাইন: +৮৮০১৩১৯৫৪৩২০০, +৮৮০১৯৯২৭৪১৯৭৩
+            </p>
+          </div>
+
+          <!-- Form Fields Container -->
+          <form id="registration-form" onsubmit="handleFormSubmit(event)" class="p-6 sm:p-12 space-y-6 sm:space-y-8">
+            <div id="submit-error" class="hidden p-4 bg-red-50 border border-red-200 text-red-700 rounded-xl text-sm"></div>
+
+            <!-- Section 1: Personal Info -->
+            <div>
+              <h3 class="text-lg sm:text-xl font-bold text-brand-800 border-b border-brand-100 pb-2 mb-4 sm:mb-6 flex items-center gap-2">
+                <i data-lucide="user" class="text-brand-600"></i> ব্যক্তিগত তথ্য
+              </h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
                 
-                <!-- ব্র্যান্ড লোগো ও তথ্য (আপনার দেওয়া লোগো ব্যবহার করা হয়েছে) -->
                 <div>
-                    <div class="flex items-center gap-3 mb-6">
-                        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgckyH3KvDmuqcCkJmyznt3DI8ENiWl-Wo3jE9Wb-pUhk2-WYW0EVwZQ_CkgkI9a06E5d4EBWfMdM4pC3kKVuRfMcdO_82SzEE6_L5ojBj1cyRJwQpwhlmTc6cj0EdQehD5vwPSNJ5c_VE5IPB8Rz66-mzrcKl_Pl7TO87mAQiGKVrUH2YeMmf2Q9MsLt8O" alt="[মারকাজুল নূর লোগো]" class="w-12 h-12 rounded-full object-cover border-2 border-islamic-accent shadow-md">
-                        <span class="font-bengali-serif font-bold text-2xl text-white">মারকাজুল নূর</span>
-                    </div>
-                    <p class="text-gray-400 text-sm leading-relaxed mb-6">একটি আধুনিক, যুগোপযোগী এবং পূর্ণাঙ্গ আদর্শ দ্বীনি শিক্ষা প্রতিষ্ঠান। যেখানে ইসলামী শিক্ষার পাশাপাশি আধুনিক শিক্ষার সুন্দর সমন্বয় ঘটানো হয়েছে।</p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-islamic hover:text-white transition">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-islamic hover:text-white transition">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-islamic hover:text-white transition">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </div>
+                  <label class="block text-sm font-semibold text-slate-700 mb-1">শিক্ষার্থীর পূর্ণ নাম <span class="text-red-500">*</span></label>
+                  <input type="text" id="fullName" name="fullName" placeholder="যেমন: আব্দুল্লাহ আল মামুন" class="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-shadow bg-slate-50 text-base">
+                  <p id="err-fullName" class="text-red-500 text-xs mt-1 hidden"></p>
                 </div>
 
-                <!-- গুরুত্বপূর্ণ লিংকসমূহ -->
                 <div>
-                    <h4 class="font-bengali-serif text-xl font-bold mb-6 border-b border-gray-700 pb-2 inline-block">গুরুত্বপূর্ণ লিংক</h4>
-                    <ul class="space-y-3">
-                        <li><a href="#home" class="text-gray-400 hover:text-islamic-accent transition flex items-center gap-2"><i class="fas fa-angle-right text-xs"></i> হোম পেজ</a></li>
-                        <li><a href="#why-us" class="text-gray-400 hover:text-islamic-accent transition flex items-center gap-2"><i class="fas fa-angle-right text-xs"></i> আমাদের বৈশিষ্ট্য</a></li>
-                        <li><a href="#departments" class="text-gray-400 hover:text-islamic-accent transition flex items-center gap-2"><i class="fas fa-angle-right text-xs"></i> বিভাগসমূহ</a></li>
-                        <li><a href="#gallery" class="text-gray-400 hover:text-islamic-accent transition flex items-center gap-2"><i class="fas fa-angle-right text-xs"></i> গ্যালারি</a></li>
-                        <li><a href="#admission-form" class="text-gray-400 hover:text-islamic-accent transition flex items-center gap-2"><i class="fas fa-angle-right text-xs"></i> অনলাইনে ভর্তি</a></li>
-                    </ul>
+                  <label class="block text-sm font-semibold text-slate-700 mb-1">whatsapp নাম্বার <span class="text-red-500">*</span></label>
+                  <input type="tel" id="whatsapp" name="whatsapp" placeholder="যেমন: 017XXXXXXXX" class="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-shadow bg-slate-50 text-base">
+                  <p id="err-whatsapp" class="text-red-500 text-xs mt-1 hidden"></p>
                 </div>
 
-                <!-- বিভাগসমূহ -->
-                <div>
-                    <h4 class="font-bengali-serif text-xl font-bold mb-6 border-b border-gray-700 pb-2 inline-block">বিভাগসমূহ</h4>
-                    <ul class="space-y-3">
-                        <li class="text-gray-400 flex items-center gap-2"><i class="fas fa-check text-islamic text-sm"></i> প্লে - পঞ্চম শ্রেণি (জেনারেল)</li>
-                        <li class="text-gray-400 flex items-center gap-2"><i class="fas fa-check text-islamic text-sm"></i> নূরানী বিভাগ</li>
-                        <li class="text-gray-400 flex items-center gap-2"><i class="fas fa-check text-islamic text-sm"></i> নাজেরা বিভাগ</li>
-                        <li class="text-gray-400 flex items-center gap-2"><i class="fas fa-check text-islamic text-sm"></i> হিফজুল কুরআন বিভাগ</li>
-                        <li class="text-gray-400 flex items-center gap-2"><i class="fas fa-check text-islamic text-sm"></i> কিতাব বিভাগ (কওমী)</li>
-                    </ul>
+                <div class="col-span-1 md:col-span-2">
+                  <label class="block text-sm font-semibold text-slate-700 mb-2">লিঙ্গ <span class="text-red-500">*</span></label>
+                  <div class="flex gap-4">
+                    <label class="flex items-center cursor-pointer p-3 border border-slate-300 rounded-lg flex-1 hover:bg-brand-50 transition-colors">
+                      <input type="radio" name="gender" value="Male" class="w-4 h-4 text-brand-600 focus:ring-brand-500 border-slate-300">
+                      <span class="ml-2 text-slate-700 text-base">পুরুষ</span>
+                    </label>
+                    <label class="flex items-center cursor-pointer p-3 border border-slate-300 rounded-lg flex-1 hover:bg-brand-50 transition-colors">
+                      <input type="radio" name="gender" value="Female" class="w-4 h-4 text-brand-600 focus:ring-brand-500 border-slate-300">
+                      <span class="ml-2 text-slate-700 text-base">মহিলা</span>
+                    </label>
+                  </div>
+                  <p id="err-gender" class="text-red-500 text-xs mt-1 hidden"></p>
                 </div>
 
-                <!-- যোগাযোগের ঠিকানা -->
-                <div>
-                    <h4 class="font-bengali-serif text-xl font-bold mb-6 border-b border-gray-700 pb-2 inline-block">যোগাযোগ</h4>
-                    <ul class="space-y-4">
-                        <li class="flex items-start gap-3">
-                            <i class="fas fa-map-marker-alt text-islamic-accent mt-1"></i>
-                            <span class="text-gray-400 text-sm">মেইন রোড, মাদ্রাসা পাড়া,<br>ঢাকা-১২০০, বাংলাদেশ</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <i class="fas fa-phone-alt text-islamic-accent"></i>
-                            <span class="text-gray-400 text-sm">+৮৮০ ১৭০০-০০০০০০</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <i class="fas fa-envelope text-islamic-accent"></i>
-                            <span class="text-gray-400 text-sm">info@markazulnoor.com</span>
-                        </li>
-                    </ul>
+                <div class="col-span-1 md:col-span-2">
+                  <label class="block text-sm font-semibold text-slate-700 mb-1">সম্পূর্ণ ঠিকানা <span class="text-red-500">*</span></label>
+                  <textarea id="address" name="address" rows="3" placeholder="গ্রাম/রাস্তা, ডাকঘর, জেলা" class="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-shadow bg-slate-50 text-base"></textarea>
+                  <p id="err-address" class="text-red-500 text-xs mt-1 hidden"></p>
                 </div>
+
+              </div>
             </div>
 
-            <!-- কপিরাইট অংশ -->
-            <div class="border-t border-gray-800 pt-8 mt-8 text-center md:flex md:justify-between md:text-left">
-                <p class="text-gray-500 text-sm mb-4 md:mb-0">&copy; ২০২৬ মারকাজুল নূর ইসলামিক একাডেমী। সর্বস্বত্ব সংরক্ষিত।</p>
-                <p class="text-gray-500 text-sm">ডেভেলপমেন্ট পার্টনার: <a href="#" class="text-islamic hover:text-white transition">আপনার টেক কোম্পানি</a></p>
+            <!-- Section 2: Education & Course selection -->
+            <div>
+              <h3 class="text-lg sm:text-xl font-bold text-brand-800 border-b border-brand-100 pb-2 mb-4 sm:mb-6 flex items-center gap-2">
+                <i data-lucide="book-open" class="text-brand-600"></i> শিক্ষাগত তথ্য ও কোর্স নির্বাচন
+              </h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
+                
+                <div>
+                  <label class="block text-sm font-semibold text-slate-700 mb-1">সর্বোচ্চ শিক্ষাগত যোগ্যতা <span class="text-red-500">*</span></label>
+                  <select id="education" name="education" class="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-shadow bg-slate-50 text-base">
+                    <option value="">নির্বাচন করুন</option>
+                    <option value="এস এস সি">এস এস সি</option>
+                    <option value="এইচ এস সি">এইচ এস সি</option>
+                    <option value="মাওলানা">মাওলানা</option>
+                    <option value="হাফেজ">হাফেজ</option>
+                    <option value="মুফতি">মুফতি</option>
+                  </select>
+                  <p id="err-education" class="text-red-500 text-xs mt-1 hidden"></p>
+                </div>
+
+                <div>
+                  <label class="block text-sm font-semibold text-slate-700 mb-1">কাঙ্খিত কোর্স মডিউল নির্বাচন করুন <span class="text-red-500">*</span></label>
+                  <select id="course" name="course" class="w-full px-4 py-2.5 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-shadow bg-slate-50 text-base">
+                    <option value="">নির্বাচন করুন</option>
+                    <option value="ai-cartoon-mastery" data-price="২০০০">বেসিক টু অ্যাডভান্সড AI কার্টুন ক্রিয়েশন</option>
+                  </select>
+                  <p id="err-course" class="text-red-500 text-xs mt-1 hidden"></p>
+                </div>
+
+              </div>
             </div>
+
+            <!-- Submit buttons -->
+            <div class="flex justify-between items-center pt-6 border-t border-brand-100">
+              <button type="button" onclick="showPage('home')" class="text-slate-600 hover:text-brand-900 text-sm font-semibold flex items-center">
+                <i data-lucide="arrow-left" class="mr-1 w-4 h-4"></i> হোমে ফিরে যান
+              </button>
+              <button type="submit" class="bg-brand-700 hover:bg-brand-800 text-white px-8 py-3 rounded-full font-bold text-base transition-colors shadow-md hover:shadow-brand-600/30">
+                নিবন্ধন সম্পন্ন করুন
+              </button>
+            </div>
+
+          </form>
         </div>
+      </div>
+
+      <!-- ==================== ADMISSION STATUS CHECKER MODAL ==================== -->
+      <div id="status-checker-modal" class="hidden fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white w-full max-w-md rounded-2xl shadow-2xl border border-brand-100 overflow-hidden fade-in">
+          <!-- Header -->
+          <div class="bg-brand-900 text-white px-6 py-4 flex justify-between items-center">
+            <h3 class="font-bold text-lg flex items-center gap-2"><i data-lucide="search" class="w-5 h-5 text-amber-400"></i> ভর্তি আবেদনের খোঁজ</h3>
+            <button onclick="closeStatusChecker()" class="text-white hover:text-amber-400 transition-colors">
+              <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+          </div>
+          <!-- Body -->
+          <div class="p-6">
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+              আপনার নিবন্ধিত হোয়াটসঅ্যাপ নম্বরটি লিখুন এবং আপনার ভর্তি আবেদনের ভেরিফিকেশন অবস্থা দেখুন।
+            </p>
+            <div class="space-y-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">whatsapp নাম্বার</label>
+                <input type="text" id="check-whatsapp" placeholder="যেমন: ০১৭XXXXXXXX" class="w-full px-4 py-2.5 border border-slate-300 rounded-lg outline-none bg-slate-50 text-base">
+              </div>
+              <button onclick="queryStatus()" class="w-full bg-brand-700 hover:bg-brand-800 text-white py-2.5 rounded-lg font-bold transition-all shadow-md">
+                অবস্থা চেক করুন
+              </button>
+
+              <!-- Result Area -->
+              <div id="checker-result" class="hidden mt-6 pt-4 border-t border-slate-100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800 mt-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div class="md:col-span-2">
+            <div class="flex items-center space-x-3 mb-4">
+              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBcDTnbqscKmgueQ6wWXLxgE_GWXA3iTUHj5uv-rKIO2TsdFLpZ-c0hyphenhyphenTY7PQFe8YxNkAGOkF-ljJampHEs44xXvlELR5Q1ZKixEIng0U1w1AOa0QrAspUK1SUI4LUmW5oE0d3LnsOl9rU5djFRG3rIL4qZNZJ1xu2w9H9DDo58e2IyHR9EqXFDqJXQA8p/s320/d5664f8e-64ac-4540-a4e5-1b11e2bc533a.jfif" alt="IIOM Logo" class="h-10 w-10 rounded-full object-cover">
+              <span class="text-white font-bold text-lg">IIOM - AI Cartoon Academy</span>
+            </div>
+            <p class="text-sm text-slate-400 max-w-sm leading-relaxed">
+              আইআইওএম একাডেমি নতুনদের সহজে এবং সঠিকভাবে মোবাইল ও পিসি দিয়ে হাই-কোয়ালিটি এনিমেশন ভিডিও তৈরি ও সফল মনিটাইজেশন শেখাতে বদ্ধপরিকর।
+            </p>
+          </div>
+          <div>
+            <h4 class="text-white font-bold text-base mb-4">গুরুত্বপূর্ণ লিংক</h4>
+            <div class="flex gap-4 items-center">
+              <!-- Facebook Offical Brand Icon (No Text, Inline SVG for 100% visibility) -->
+              <a href="https://www.facebook.com/profile.php?id=61582791908459" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-[#1877F2] hover:bg-white text-white hover:text-[#1877F2] flex items-center justify-center transition-all duration-300 shadow-md hover:scale-110" aria-label="Facebook">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+              </a>
+              
+              <!-- YouTube Offical Brand Icon (No Text, Inline SVG for 100% visibility) -->
+              <a href="https://www.youtube.com/channel/UCEuteJP0_HQpNiHbZTlu5cw" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-[#FF0000] hover:bg-white text-white hover:text-[#FF0000] flex items-center justify-center transition-all duration-300 shadow-md hover:scale-110" aria-label="YouTube">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.518 3.545 12 3.545 12 3.545s-7.518 0-9.388.507a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11c1.87.507 9.388.507 9.388.507s7.518 0 9.388-.507a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-white font-bold text-base mb-4">যোগাযোগ ও হেল্পলাইন</h4>
+            <div class="space-y-3 text-sm text-slate-400">
+              <p class="flex items-center gap-2">
+                <i data-lucide="mail" class="w-4 h-4 text-amber-400"></i>
+                <a href="mailto:iiom.education@gmail.com" class="hover:text-white transition-colors">iiom.education@gmail.com</a>
+              </p>
+              <p class="flex items-start gap-2">
+                <i data-lucide="phone" class="w-4 h-4 text-amber-400 mt-1"></i>
+                <span>
+                  +৮৮০১৩১৯৫৪৩২০০ <br>
+                  +৮৮০১৯৯২৭৪১৯Nz৩ (আসলে: +৮৮০১৯৯২৭৪১৯৭৩)
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-slate-800 mt-8 pt-8 text-center text-xs">
+          <p>&copy; 2026 IIOM. সর্বস্বত্ব সংরক্ষিত।</p>
+        </div>
+      </div>
     </footer>
 
-    <!-- জাভাস্ক্রিপ্ট কোড -->
+    <!-- Scripts Area -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        // Universal SPA Router state
+        function showPage(pageId) {
+            const home = document.getElementById('home-page');
+            const reg = document.getElementById('registration-page');
             
-            // ১. মোবাইল মেনু টগল
-            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-            const mobileMenu = document.getElementById('mobile-menu');
-            
-            mobileMenuBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-                const icon = mobileMenuBtn.querySelector('i');
-                if (mobileMenu.classList.contains('hidden')) {
-                    icon.classList.remove('fa-times');
-                    icon.classList.add('fa-bars');
-                } else {
-                    icon.classList.remove('fa-bars');
-                    icon.classList.add('fa-times');
+            if (pageId === 'home') {
+                home.classList.remove('hidden');
+                reg.classList.add('hidden');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            } else if (pageId === 'register') {
+                home.classList.add('hidden');
+                reg.classList.remove('hidden');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        // Custom smooth scrolling to sections
+        function scrollToSection(sectionId) {
+            showPage('home');
+            setTimeout(() => {
+                const el = document.getElementById(sectionId);
+                if (el) {
+                    el.scrollIntoView({ behavior: 'smooth' });
                 }
-            });
+            }, 100);
+        }
 
-            // কোনো লিংকে ক্লিক করলে মোবাইল মেনু বন্ধ হয়ে যাবে
-            const mobileLinks = mobileMenu.querySelectorAll('a');
-            mobileLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.add('hidden');
-                    mobileMenuBtn.querySelector('i').classList.replace('fa-times', 'fa-bars');
-                });
-            });
+        // Accordion engine for FAQs
+        function toggleFAQ(idx) {
+            const el = document.getElementById(`faq-ans-${idx}`);
+            const icon = document.getElementById(`faq-icon-${idx}`);
+            if (el.classList.contains('hidden')) {
+                el.classList.remove('hidden');
+                icon.style.transform = "rotate(180deg)";
+            } else {
+                el.classList.add('hidden');
+                icon.style.transform = "rotate(0deg)";
+            }
+        }
 
-            // ২. স্টিকি নেভিগেশন বার ইফেক্ট
-            const navbar = document.getElementById('navbar');
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 10) {
-                    navbar.classList.add('shadow-lg', 'py-1');
-                    navbar.classList.remove('py-0');
-                } else {
-                    navbar.classList.remove('shadow-lg', 'py-1');
-                    navbar.classList.add('py-0');
+        // Accordion engine for Course Syllabus
+        function toggleSyllabus(idx) {
+            const el = document.getElementById(`syllabus-ans-${idx}`);
+            const icon = document.getElementById(`syllabus-icon-${idx}`);
+            if (el.classList.contains('hidden')) {
+                el.classList.remove('hidden');
+                icon.style.transform = "rotate(180deg)";
+            } else {
+                el.classList.add('hidden');
+                icon.style.transform = "rotate(0deg)";
+            }
+        }
+
+        // Mobile Menu Drawer Control
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-dropdown');
+            menu.classList.toggle('hidden');
+        }
+
+        // Countdown Timer Engine
+        function startPromoTimer() {
+            let totalSeconds = 2 * 24 * 60 * 60 + 14 * 60 * 60 + 45 * 60 + 59; // Initial time
+            const interval = setInterval(() => {
+                if (totalSeconds <= 0) {
+                    clearInterval(interval);
+                    return;
                 }
-            });
+                totalSeconds--;
+                
+                const d = Math.floor(totalSeconds / (24 * 3600));
+                const h = Math.floor((totalSeconds % (24 * 3600)) / 3600);
+                const m = Math.floor((totalSeconds % 3600) / 60);
+                const s = totalSeconds % 60;
+                
+                document.getElementById('days').textContent = d.toString().padStart(2, '0');
+                document.getElementById('hours').textContent = h.toString().padStart(2, '0');
+                document.getElementById('minutes').textContent = m.toString().padStart(2, '0');
+                document.getElementById('seconds').textContent = s.toString().padStart(2, '0');
+            }, 1000);
+        }
 
-            // ৩. FAQ অ্যাকোর্ডিয়ন লজিক
-            const faqItems = document.querySelectorAll('.faq-item');
+        // Custom interactive toasts
+        function showToast(message, type = 'success') {
+            const container = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            toast.className = `p-4 rounded-xl shadow-lg text-white font-semibold flex items-center justify-between gap-3 pointer-events-auto fade-in ${
+                type === 'success' ? 'bg-emerald-600' : 'bg-red-600'
+            }`;
             
-            faqItems.forEach(item => {
-                const button = item.querySelector('button');
-                const content = item.querySelector('.faq-content');
-                const icon = item.querySelector('.faq-icon');
+            toast.innerHTML = `
+                <span>${message}</span>
+                <button class="hover:text-amber-400"><i data-lucide="x" class="w-4 h-4"></i></button>
+            `;
+            container.appendChild(toast);
+            lucide.createIcons();
 
-                button.addEventListener('click', () => {
-                    // অন্যান্য খোলা থাকা FAQ গুলি বন্ধ করা
-                    faqItems.forEach(otherItem => {
-                        if (otherItem !== item) {
-                            otherItem.querySelector('.faq-content').classList.add('hidden');
-                            otherItem.querySelector('.faq-icon').style.transform = 'rotate(0deg)';
-                            otherItem.querySelector('button').classList.remove('text-islamic');
-                        }
-                    });
+            // Auto-dismiss
+            setTimeout(() => {
+                toast.classList.add('opacity-0');
+                setTimeout(() => toast.remove(), 400);
+            }, 4000);
 
-                    // টগল করা
-                    content.classList.toggle('hidden');
-                    if (!content.classList.contains('hidden')) {
-                        icon.style.transform = 'rotate(180deg)';
-                        button.classList.add('text-islamic');
-                    } else {
-                        icon.style.transform = 'rotate(0deg)';
-                        button.classList.remove('text-islamic');
+            toast.querySelector('button').onclick = () => toast.remove();
+        }
+
+        // Validate and handle entire form submission
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            
+            // Clear error highlights
+            const errorFields = document.querySelectorAll('[id^="err-"]');
+            errorFields.forEach(el => el.classList.add('hidden'));
+            const errorBox = document.getElementById('submit-error');
+            errorBox.classList.add('hidden');
+
+            let hasError = false;
+
+            // Simple validator helper
+            function validateField(id, errMsg) {
+                const val = document.getElementById(id).value.trim();
+                if (!val) {
+                    const errEl = document.getElementById(`err-${id}`);
+                    if (errEl) {
+                        errEl.textContent = errMsg;
+                        errEl.classList.remove('hidden');
                     }
-                });
-            });
-
-            // ৪. ভর্তি ফরম সাবমিশন এবং মোডাল হ্যান্ডলিং
-            const admissionForm = document.getElementById('admissionForm');
-            const successModal = document.getElementById('successModal');
-            const closeModalBtn = document.getElementById('closeModal');
-
-            admissionForm.addEventListener('submit', function(e) {
-                e.preventDefault(); // ডেমো হিসেবে রিলোড প্রতিরোধ করা হয়েছে
-                
-                // সাকসেস মোডাল প্রদর্শন
-                successModal.classList.add('active');
-                
-                // ফরম রিসেট
-                admissionForm.reset();
-            });
-
-            closeModalBtn.addEventListener('click', () => {
-                successModal.classList.remove('active');
-            });
-
-            // বাইরে ক্লিক করলে মোডাল বন্ধ হওয়া
-            successModal.addEventListener('click', (e) => {
-                if (e.target === successModal) {
-                    successModal.classList.remove('active');
+                    hasError = true;
+                    return false;
                 }
-            });
-        });
+                return val;
+            }
+
+            // Gather inputs
+            const fullName = validateField('fullName', 'শিক্ষার্থীর পূর্ণ নাম আবশ্যক');
+            const whatsapp = validateField('whatsapp', 'whatsapp নাম্বার আবশ্যক');
+            const address = validateField('address', 'সম্পূর্ণ ঠিকানা আবশ্যক');
+            const education = validateField('education', 'শিক্ষাগত যোগ্যতা আবশ্যক');
+            const courseSelect = document.getElementById('course');
+            const course = courseSelect.value;
+            
+            if (!course) {
+                document.getElementById('err-course').textContent = 'কোর্সটি নির্বাচন করুন';
+                document.getElementById('err-course').classList.remove('hidden');
+                hasError = true;
+            }
+
+            // Gender selector Validation
+            const genderVal = document.querySelector('input[name="gender"]:checked');
+            if (!genderVal) {
+                document.getElementById('err-gender').textContent = 'অনুগ্রহ করে লিঙ্গ সিলেক্ট করুন';
+                document.getElementById('err-gender').classList.remove('hidden');
+                hasError = true;
+            }
+
+            // Verify Bangladeshi Phone Pattern for whatsapp
+            if (whatsapp && !/^01[3-9]\d{8}$/.test(whatsapp)) {
+                const errEl = document.getElementById('err-whatsapp');
+                errEl.textContent = 'সঠিক বাংলাদেশী whatsapp নম্বর দিন (যেমন: 017XXXXXXXX)';
+                errEl.classList.remove('hidden');
+                hasError = true;
+            }
+
+            if (hasError) {
+                showToast('আবেদন ফরমে কিছু ভুল রয়েছে, ঠিক করুন।', 'error');
+                return;
+            }
+
+            const courseText = courseSelect.options[courseSelect.selectedIndex].text;
+
+            // Generate structured client info
+            const admissionObj = {
+                fullName,
+                whatsapp,
+                gender: genderVal.value,
+                address,
+                education,
+                course: courseText,
+                status: 'অপেক্ষমান (Pending)'
+            };
+
+            // Save inside localstorage for tracking system simulations
+            localStorage.setItem(`iiom_reg_${whatsapp}`, JSON.stringify(admissionObj));
+
+            // =======================================================
+            // 1. TELEGRAM BOT NOTIFICATION INTEGRATION
+            // =======================================================
+            const telegramToken = '8889524652:AAE0A-yCwZ3sXSIkcmtrKjaTl87UkwCe09A';
+            const telegramChatId = '8409850252';
+            
+            const messageText = `🔔 <b>নতুন নিবন্ধন (New Registration)</b> 🔔\n` +
+                                `━━━━━━━━━━━━━━━━━━━━\n` +
+                                `👤 <b>নাম:</b> ${fullName}\n` +
+                                `📞 <b>whatsapp নাম্বার:</b> ${whatsapp}\n` +
+                                `🚻 <b>লিঙ্গ:</b> ${genderVal.value === 'Male' ? 'পুরুষ' : 'মহিলা'}\n` +
+                                `🏠 <b>ঠিকানা:</b> ${address}\n` +
+                                `🎓 <b>যোগ্যতা:</b> ${education}\n` +
+                                `📚 <b>কোর্স:</b> ${courseText}\n` +
+                                `━━━━━━━━━━━━━━━━━━━━\n` +
+                                `IIOM AI Cartoon Academy`;
+
+            fetch(`https://api.telegram.org/bot${telegramToken}/sendMessage`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    chat_id: telegramChatId,
+                    text: messageText,
+                    parse_mode: 'HTML'
+                })
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.ok) {
+                    console.log('Telegram Bot notification sent successfully.');
+                } else {
+                    console.error('Telegram Bot API Error:', data.description);
+                }
+            })
+            .catch(err => console.error('Telegram integration failed:', err));
+
+
+            // =======================================================
+            // 2. GOOGLE FORM SUBMISSION INTEGRATION (AJAX Mode)
+            // =======================================================
+            // নির্দেশাবলী: গুগল ফর্মের 'formResponse' URL এবং নিচে 'entry.XXXX' আইডিগুলো আপনার ফর্মের সাথে প্রতিস্থাপন করুন।
+            const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_ID_HERE/formResponse';
+            
+            const googleFormData = new FormData();
+            googleFormData.append('entry.1000001', fullName);    // শিক্ষার্থীর নাম
+            googleFormData.append('entry.1000003', whatsapp);    // whatsapp নাম্বার
+            googleFormData.append('entry.1000005', genderVal.value === 'Male' ? 'পুরুষ' : 'মহিলা'); // লিঙ্গ
+            googleFormData.append('entry.1000006', address);     // ঠিকানা
+            googleFormData.append('entry.1000007', education);   // শিক্ষাগত যোগ্যতা
+            googleFormData.append('entry.1000008', courseText);  // কোর্স
+
+            // mode: 'no-cors' ব্যবহারের ফলে সাবমিশন সফল হলেও CORSজনিত কোনো ব্রাউজার এরর বা পেজ লক হবে না
+            fetch(GOOGLE_FORM_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                body: googleFormData
+            })
+            .then(() => console.log('Data successfully submitted to Google Forms.'))
+            .catch(err => console.error('Google Forms submit failed:', err));
+
+
+            // Set up Slip View details
+            document.getElementById('slip-name').textContent = fullName;
+            document.getElementById('slip-whatsapp').textContent = whatsapp;
+            document.getElementById('slip-course').textContent = admissionObj.course;
+
+            // Transition UI elements
+            document.getElementById('main-form-card').classList.add('hidden');
+            document.getElementById('success-card').classList.remove('hidden');
+            
+            showPage('register');
+            showToast('আপনার রেজিস্ট্রেশন সফল হয়েছে!');
+        }
+
+        // Modal triggers for Admissions tracking tool
+        function showStatusChecker() {
+            document.getElementById('status-checker-modal').classList.remove('hidden');
+            document.getElementById('checker-result').classList.add('hidden');
+            document.getElementById('check-whatsapp').value = '';
+        }
+
+        // Close Status Modal
+        function closeStatusChecker() {
+            document.getElementById('status-checker-modal').classList.add('hidden');
+        }
+
+        // Live localstorage query for status tracking
+        function queryStatus() {
+            const checkWhatsapp = document.getElementById('check-whatsapp').value.trim();
+            const resultArea = document.getElementById('checker-result');
+            
+            if (!checkWhatsapp) {
+                showToast('দয়া করে whatsapp নম্বর দিন।', 'error');
+                return;
+            }
+
+            const storedData = localStorage.getItem(`iiom_reg_${checkWhatsapp}`);
+            resultArea.classList.remove('hidden');
+
+            if (storedData) {
+                const info = JSON.parse(storedData);
+                resultArea.innerHTML = `
+                    <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-4">
+                        <h4 class="font-bold text-emerald-800 mb-1">আবেদন খুঁজে পাওয়া গেছে!</h4>
+                        <div class="text-xs text-slate-700 space-y-1">
+                            <p><strong>নাম:</strong> ${info.fullName}</p>
+                            <p><strong>কোর্স:</strong> ${info.course}</p>
+                            <p><strong>অবস্থা:</strong> <span class="bg-amber-400 text-amber-950 font-bold px-2 py-0.5 rounded text-[10px]">${info.status}</span></p>
+                        </div>
+                        <p class="text-[10px] text-slate-500 mt-2 italic">সাধারণত ২৪ ঘণ্টার মধ্যে আমাদের অ্যাডমিশন টিম তথ্যগুলো ডাটাবেজে এন্ট্রি করে আপনার সাথে যোগাযোগ করবে।</p>
+                    </div>
+                `;
+            } else {
+                resultArea.innerHTML = `
+                    <div class="bg-red-50 border border-red-200 rounded-xl p-4 text-center">
+                        <p class="text-red-700 font-bold text-sm">এই নম্বরে কোনো আবেদন খুঁজে পাওয়া যায়নি!</p>
+                        <p class="text-xs text-slate-500 mt-1">অনুগ্রহ করে সঠিক নম্বরটি লিখুন অথবা নতুন করে ভর্তি আবেদন করুন।</p>
+                    </div>
+                `;
+            }
+        }
+
+        // Initialize systems on load
+        window.onload = function() {
+            startPromoTimer();
+            lucide.createIcons();
+        }
     </script>
+
+    <!-- Floating WhatsApp Helpline Button (Using first provided active number) -->
+    <a href="https://wa.me/8801319543200" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-all hover:scale-110 active:scale-95 group">
+      <svg class="w-7 h-7 fill-white text-emerald-500" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.46h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </a>
 </body>
 </html>
